@@ -2,7 +2,7 @@ Feature: Login
   Background:
   |sbarakeh15@gmail.com|123|
 
-  Scenario: The Login process has been completed Successfull
+  Scenario: The Login process has been completed Successful
     Given The user is not logged in
     And the password is "123"
     And the email is "sbarakeh15@gmail.com"

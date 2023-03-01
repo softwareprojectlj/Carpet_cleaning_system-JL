@@ -30,7 +30,6 @@ public class Adminlogin {
             loginflag=true;
         else if(A.checkemail(em) == 0)
             loginflag=false;
-
     }
 
     @Then("the user login succeeds")

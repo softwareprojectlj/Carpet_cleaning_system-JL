@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="commit num 2">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/Adminlogin.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/recordProduct.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/Adminlogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/hp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/hp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Adminlogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Adminlogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/recordProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/recordProduct.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/Adminlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/Adminlogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Adminlogin.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +30,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d5aca7bb-d94b-46a8-93af-1c4b4ec17e6d" />
+        <option name="url" value="https://github.com/lemarafuad/Carpet_cleaning_system-JL.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Adminlogin">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Carpet_cleaning_system" />
@@ -154,9 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Adminlogin" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Cucumber Java.Feature: recordProduct" />
+        <item itemvalue="Cucumber Java.Feature: Adminlogin" />
         <item itemvalue="Cucumber Java.Scenario: Successful Sign up (1)" />
         <item itemvalue="JUnit.Adminlogin" />
       </list>
@@ -192,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675880662762</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit num 2">
+      <created>1677608115339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677608115339</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,8 +224,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit num 1" />
-    <MESSAGE value="commit num 2" />
     <MESSAGE value="commit num 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit num 3" />
+    <MESSAGE value="commit num 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit num 2" />
   </component>
 </project>

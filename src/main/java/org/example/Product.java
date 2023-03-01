@@ -4,25 +4,30 @@ import java.text.SimpleDateFormat;
 
 public class Product {
 
-    private String name;
+     public String id;
+     public String name;
     //private String picture;
-    private double height;
-    private double width;
+    public String height;
+    public String width;
 
-    private int dayfinish;
+    public String dayfinish;
     String pattern = "yyyy-MM-dd";
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
     public Product() {
     }
 
-    public void setdata(String name, double height, double width, int d) {
-        this.name=name;
-       // this.picture=pic;
-        this.height=height;
-        this.width=width;
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String stringDate= DateFor.format(d);
-        this.dayfinish=d;
-        System.out.println("jana");
+    public int checkid(String idp) {
+        if(idp.equals("123"))
+        {return 1;}
+        return 0;
+    }
+
+
+    public void setdata(String id, String namep, String H , String W, String day, String s4) {
+        this.id=id;
+        this.name=namep;
+        this.height=H;
+        this.width=W;
+        this.dayfinish=day;
     }
 }

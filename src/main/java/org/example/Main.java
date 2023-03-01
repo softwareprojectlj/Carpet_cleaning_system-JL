@@ -1,12 +1,21 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
         System.out.println("software's project!");
-        Product p= new Product();
-        p.setdata("jana",12.3,13,15/11/2002);
-        System.out.println(p);
-        //lemara
+         Admin Ad =new Admin();
+        System.out.println("enter the email:");
+        String email=sc.nextLine();
+        Ad.email=email;
+        System.out.println("enter the password:");
+        String password = sc.nextLine();
+        Ad.password=password;
+        Ad.checkemail(email);
+        Ad.checkpass(password);
+        System.out.println("you are logged in");
     }
-    //jana barakeh
+
 }
