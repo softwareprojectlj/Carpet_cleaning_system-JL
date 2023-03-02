@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("software's project!");
-         Admin Ad =new Admin();
+        Admin Ad =new Admin();
         System.out.println("enter the email:");
         String email=sc.nextLine();
         Ad.email=email;
