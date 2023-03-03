@@ -3,25 +3,27 @@ package software.test;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.example.Admin;
+import org.example.invoiceCC;
 
 public class invoiceC {
+  invoiceCC invoice1 ;
+
     @Given("that the admin is logged in")
     public void that_the_admin_is_logged_in() {
-
+     Admin  a = new Admin();
+      new Adminlogin(a);
     }
 
-    @Given("there is a invoice with {string} ,{string} ,{string},{string} ,{string}")
-    public void there_is_a_invoice_with(String Customername, String Carpetpname, String address, String price, String Date) {
-
+  @When("the admin entered  invoice with correct Data")
+  public void the_admin_entered_invoice_with_correct_data() {
+      //invoice1.setinvoice("jana","carpet1","Tulkarem_barakeh street","30","10/10/2022");
     }
 
-    @When("the invoice is added in the system")
+    @Then("the invoice is added in the system")
     public void the_invoice_is_added_in_the_system() {
 
     }
 
-    @Then("the invoice with {string} ,{string} ,{string},{string} ,{string} is contained in the system")
-    public void the_invoice_with_is_contained_in_the_system(String Customername, String Carpetpname, String address, String price, String Date) {
 
-    }
 }
