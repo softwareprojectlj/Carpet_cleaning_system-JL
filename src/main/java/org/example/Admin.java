@@ -1,5 +1,4 @@
 package org.example;
-
 public class Admin {
 
     public String password;
