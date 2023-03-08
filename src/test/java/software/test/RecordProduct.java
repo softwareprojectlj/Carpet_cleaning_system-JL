@@ -13,18 +13,20 @@ public class RecordProduct {
 
     @Given("the product not record")
     public void the_product_not_record() {
-        product=new Product();
        productflag = false;
+        product = new Product();
 
     }
     @When("I entered the correct data")
     public void i_entered_the_correct_data() {
+        System.out.println("add new product");
     product.setData("1","carpet1","2.2","3","10/10/2002");
 
     }
     @Then("the product added Successfully")
     public void the_product_added_successfully() {
-       productflag = true;
+        System.out.println("product added");
+        productflag = true;
     }
 
 

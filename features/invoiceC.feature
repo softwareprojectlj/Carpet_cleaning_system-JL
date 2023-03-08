@@ -1,6 +1,6 @@
 Feature: Add invoice to a system
   #Background:
-  #|Customer name  |carpet name | address                | price | Date        |
+  #|Customer name  |product name | address                | price | Date        |
   #|     jana      |  carpet1   | Tulkarem_barakeh street| 30    | 10/10/2022  |
   #|    lemara     |  carpet2   | Anabta_roman street    |  70   | 06/01/2023  |
 

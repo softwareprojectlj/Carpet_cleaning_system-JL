@@ -8,7 +8,7 @@ public class Adminlogin {
     Admin A;
     static boolean loginflag;
     public Adminlogin(Admin j)
-    { A= new Admin(j);}
+    { j= new Admin();}
     @Given("The user is not logged in")
     public void the_user_is_not_logged_in() {
         loginflag = false;
@@ -17,18 +17,18 @@ public class Adminlogin {
     @Given("the password is {string}")
     public void the_password_is(String pass) {
         A.password=pass;
-        if(A.checkpass(pass) == 1)
+        if(A.checkpass(pass))
             loginflag=true;
-        else if(A.checkpass(pass) == 0)
+        else if(!A.checkpass(pass))
             loginflag=false;
     }
 
     @Given("the email is {string}")
     public void the_email_is(String em) {
         A.email=em;
-        if(A.checkemail(em) == 1)
+        if(A.checkemail(em))
             loginflag=true;
-        else if(A.checkemail(em) == 0)
+        else if(!A.checkemail(em))
             loginflag=false;
     }
 

@@ -8,10 +8,12 @@ public class Product {
     public String height;
     public String width;
     public String dayfinish;
-   //  boolean productflag;
-    //String pattern = "yyyy-MM-dd";
-    //SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
     public Product() {
+        id="";
+        name="";
+        height="";
+        width="";
+        dayfinish="";
     }
 
     public void setData(String id, String namep, String H, String W, String D) {
@@ -20,6 +22,19 @@ public class Product {
         this.height=H;
         this.width=W;
         this.dayfinish=D;
+    }
+
+    public Integer getprice(String w,String h)
+    {
+        Integer price;
+        this.width=w;
+        this.height=h;
+        Double area=(Double.valueOf(w) * Double.valueOf(h));
+        if(area<25 && area>0 )
+            price=200;
+        else
+            price=450;
+        return price;
     }
 
     /*public int checkid(String idp) {
