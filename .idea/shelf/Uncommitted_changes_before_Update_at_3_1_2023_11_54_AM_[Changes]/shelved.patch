@@ -1,0 +1,9 @@
+Index: src/test/resources/features/Adminlogin.feature
+===================================================================
+diff --git a/src/test/resources/features/Adminlogin.feature b/src/test/resources/features/Adminlogin.feature
+deleted file mode 100644
+--- a/src/test/resources/features/Adminlogin.feature	(revision 9bf0cf97fb2997479bdd009c2ba3c18b1d10a5c7)
++++ /dev/null	(revision 9bf0cf97fb2997479bdd009c2ba3c18b1d10a5c7)
+@@ -1,1 +0,0 @@
+-Feature:
+\ No newline at end of file

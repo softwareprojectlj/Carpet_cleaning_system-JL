@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="commit num 77">
-      <change afterPath="$PROJECT_DIR$/Feature/recordCustomer.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/UsersRunner.java" afterDir="false" />
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="commit num 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/invoiceC.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/invoiceC.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/recordProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/recordProduct.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/Adminlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/Adminlogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +22,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d5aca7bb-d94b-46a8-93af-1c4b4ec17e6d" />
+        <option name="url" value="https://github.com/lemarafuad/Carpet_cleaning_system-JL.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,26 +63,46 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
+      <recent name="software.test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\IdeaProjects\Carpet_cleaning_system-JL\features" />
+      <recent name="C:\Users\hp\IdeaProjects\Carpet_cleaning_system-JL\src\test" />
+      <recent name="C:\Users\hp\IdeaProjects\Carpet_cleaning_system-JL\src\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsersRunner">
-    <configuration name="Feature: recordCustomer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Carpet_cleaning_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: invoice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/recordCustomer.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/invoice.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Carpet_cleaning_system" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: recordCustomer" />
+      <option name="SUGGESTED_NAME" value="Feature: invoice" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -78,16 +114,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: invoiceC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/invoiceC.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Carpet_cleaning_system" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: invoiceC" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: add a invoice successfully (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/invoiceC.feature" />
+      <option name="GLUE" value="software.test" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Carpet_cleaning_system" />
+      <option name="NAME_FILTER" value="^add a invoice successfully$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^add a invoice successfully$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: add a invoice successfully" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Carpet_cleaning_system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="software.test.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="software.test" />
-      <option name="MAIN_CLASS_NAME" value="software.test.UsersRunner" />
+      <option name="MAIN_CLASS_NAME" value="software.test.Tester" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,8 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsersRunner" />
-        <item itemvalue="Cucumber Java.Feature: recordCustomer" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Tester" />
+        <item itemvalue="Cucumber Java.Feature: invoiceC" />
+        <item itemvalue="Cucumber Java.Scenario: add a invoice successfully (1)" />
+        <item itemvalue="Cucumber Java.Feature: invoice" />
       </list>
     </recent_temporary>
   </component>
@@ -130,35 +207,42 @@
       <option name="project" value="LOCAL" />
       <updated>1675880662762</updated>
     </task>
-    <task id="LOCAL-00004" summary="commit num 4">
-      <created>1675889252560</created>
+    <task id="LOCAL-00004" summary="commit num 2">
+      <created>1677608115339</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1675889252560</updated>
+      <updated>1677608115339</updated>
     </task>
-    <task id="LOCAL-00005" summary="commit num 5">
-      <created>1677268412331</created>
+    <task id="LOCAL-00005" summary="commit num 77">
+      <created>1677741988438</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1677268412331</updated>
+      <updated>1677741988438</updated>
     </task>
-    <task id="LOCAL-00006" summary="commit num 6">
-      <created>1677268469107</created>
+    <task id="LOCAL-00006" summary="commit num 1">
+      <created>1677742449856</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1677268469107</updated>
+      <updated>1677742449857</updated>
     </task>
-    <task id="LOCAL-00007" summary="commit num 77">
-      <created>1677269318569</created>
+    <task id="LOCAL-00007" summary="commit num 3">
+      <created>1677841155986</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1677269318569</updated>
+      <updated>1677841155986</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit num 4">
+      <created>1677851482619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677851482619</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,13 +257,21 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit num 77" />
     <MESSAGE value="commit num 1" />
     <MESSAGE value="commit num 2" />
     <MESSAGE value="commit num 3" />
     <MESSAGE value="commit num 4" />
-    <MESSAGE value="commit num 5" />
-    <MESSAGE value="commit num 6" />
-    <MESSAGE value="commit num 77" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit num 77" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit num 4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
