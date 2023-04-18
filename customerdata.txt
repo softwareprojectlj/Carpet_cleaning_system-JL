@@ -1,0 +1,10 @@
+Customers Id,Customers Name,Customers Phone,Customers Address
+1,ali,0597992808,anabta
+33,raghad,059723456,Nablus
+4,jana,005550550,Tulkarem
+5,ratan,0657483,anabta
+6,ali,058479428,ad,maskd
+7,ali,05847364,nlkfsdg
+8,marwa,003258235958,tulkarem
+9,hala,98579502950,jeneen
+10,dana,732985739,nablus
