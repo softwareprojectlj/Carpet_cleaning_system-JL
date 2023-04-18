@@ -1,0 +1,6 @@
+1 , Sami , 0599876345 , tulkarem , available , null
+2 , ahmad , 0599234476 , tulkarem , available , null
+3 , Jad , 0599823674 , tulkarem , available , null
+4 , Omar , 0594477567 , tulkarem , available , null
+5 , Mohammad , 0592349916 , tulkarem , available , null
+6 , karam , 0598766754 , tulkarem , available , null
