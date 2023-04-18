@@ -26,6 +26,7 @@ public class Customer {
 
 
 
+
     public static String getNamec() {
         return namec;
     }
