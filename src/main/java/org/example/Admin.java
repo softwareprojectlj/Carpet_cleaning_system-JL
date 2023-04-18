@@ -3,7 +3,7 @@ public class Admin {
 
     public String password;
     public String email;
-
+    private boolean logadmin=false;
     public Admin(){
       password="";
       email="";
@@ -21,4 +21,16 @@ public class Admin {
 
     }
 
+    public boolean adminloggedin() {
+        return logadmin;
+    }
+    public boolean adminloginp(String passwordA) {
+        logadmin=true;
+        return true;
+    }
+
+    public boolean adminlogine(String emailA) {
+        logadmin=true;
+        return true;
+    }
 }

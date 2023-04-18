@@ -20,7 +20,7 @@ public class RecordProduct {
     @When("I entered the correct data")
     public void i_entered_the_correct_data() {
         System.out.println("add new product");
-    product.setData("1","carpet1","2.2","3","10/10/2002");
+  //  product.setData("1","carpet1","2.2","3","10/10/2002");
 
     }
     @Then("the product added Successfully")

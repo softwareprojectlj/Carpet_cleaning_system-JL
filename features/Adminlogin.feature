@@ -16,13 +16,13 @@ Feature: Login
     Given The user is not logged in
     And the email is "<Email>"
     Then the user login fails
-    And thw user is not logged in
+    And the user is not logged in
 
 
   Scenario: user have wrong password
     Given The user is not logged in
     And the password is "<password>"
     Then the user login fails
-    And thw user is not logged in
+    And the user is not logged in
 
 
