@@ -3,6 +3,7 @@ package org.example;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import static org.example.Worker.*;
@@ -15,7 +16,15 @@ public class Product {
     public static String height;
     public static String width;
     public static String dayfinish;
-    public static String statusP;
+    public static  String type;
+
+    public static String getType() {
+        return type;
+    }
+
+    public static void setType(String type) {
+        Product.type = type;
+    }
 
     public Product() {
     }
@@ -60,97 +69,120 @@ public class Product {
         Product.dayfinish = dayfinish;
     }
 
-    public Product(int id, String namep, String H, String W, String D) {
+    public Product(int id, String namep, String H, String W, String D,String T) {
         this.idp = id;
         this.name = namep;
         this.height = H;
         this.width = W;
         this.dayfinish = D;
+        this.type=T;
     }
 
     public static String getUserData() {
-        return idp + " , " + name + " , " + height + " , " + width + " , " + dayfinish;
-    }
-
-    public void readproductdata() {
-        readfromuser();
+        return idp + " , " + name + " , " + height + " , " + width + " , " + type+ " , " + dayfinish;
     }
 
     public void readfromuser() {
-        System.out.println("Add your product:");
-        System.out.print("product Id :  ");
-        int idr = Integer.parseInt(input.nextLine());
-        System.out.println("the name of the product:");
-        String namer = input.nextLine();
-        System.out.println("the height of the product:");
-        String Hr = input.nextLine();
-        System.out.println("the width of the product:");
-        String Wr = input.nextLine();
-        System.out.println("the Delivery time:");
-        String dayr = input.nextLine();
-        writeproduct(idr, namer, Hr, Wr, dayr);
+
+        System.out.println("\tAdd your product\t");
+            System.out.print("product Id :  ");
+            int idr = Integer.parseInt(input.nextLine());
+            System.out.println("the name of the product:");
+            String namer = input.nextLine();
+            System.out.println("the Type of the product (carpets Or covers) : ");
+            String typer = input.nextLine();
+            System.out.println("the height of the product:");
+            String Hr = input.nextLine();
+            System.out.println("the width of the product:");
+            String Wr = input.nextLine();
+            System.out.println("the Delivery time:");
+            String dayr = input.nextLine();
+            writeproduct(idr, namer, Hr, Wr, dayr,typer);
+
     }
 
-    public void writeproduct(int id, String name, String height, String width, String dayfinish) {
-        Product p = new Product(id, name, height, width, dayfinish);
-
-        try {
-            FileWriter writer = new FileWriter(productfile, true);
-            writer.append(Product.getUserData());
-            writer.append("\n");
-            writer.close();
-            System.out.println("product added successfully!");
-            System.out.println(" the statue of product : \t Waiting");
-            // Distribute();
-        } catch (IOException e) {
-            System.out.println(e);
-        }
+    public void writeproduct(int id, String name, String height, String width, String dayfinish,String Typee) {
+            Product p = new Product(id, name, height, width, dayfinish,Typee);
+            try {
+                FileWriter writer = new FileWriter(productfile, true);
+                writer.append(Product.getUserData());
+                writer.append("\n");
+                writer.close();
+                System.out.println("product added successfully!");
+                System.out.println(" the statue of product : \t Waiting");
+            } catch (IOException e) {
+                System.out.println(e);
+            }
     }
 
-    public boolean checkid(String idpp) {
-        if (idpp.equals(idp)) {
-            return true;
-        }
-        return false;
-    }
-
-    public void Distribute() throws IOException {
-        String[] worker = null;
+    public void Distribute(ArrayList<String> workerarray) throws IOException {
+        String distributeP[] = null;
+        String distributeW[] = null;
+        System.out.println("\tenter the ID of the product:\t ");
+        int idproduct =Integer.parseInt(input.nextLine());
         String output = null;
-        while (true) {
-            FileInputStream fin = new FileInputStream(workerfile);
-            FileWriter writerworker = new FileWriter(workerfile, true);
+        String information ;
+        StringBuilder sb = new StringBuilder();
+        BufferedReader reader = new BufferedReader(new FileReader(workerfile));
+        String line2;
+            FileInputStream fin = new FileInputStream(productfile);
             Scanner sci = new Scanner(fin);
             while (sci.hasNextLine()) {
                 String Line = sci.nextLine();
                 Line.trim();
-                worker = Line.split(" , ");
-                if (worker[4].equalsIgnoreCase("available")) {
-                    int id = Integer.parseInt(worker[0]);
-                    String infoemation = "Worker Name :\t" + worker[1] + "\n";
-                    String nameW = worker[1];
-                    String phoneW = worker[2];
-                    String locationW = worker[3];
-                    UpdateWorker(id, "Not avalible", nameW, phoneW, locationW, name);
-                    output = infoemation + "\n the statue of product : \t in treatment";
-                    break;
-                } else {
-                    output = "waiting";
-                }
+                distributeP = Line.split(" , ");
+                if (distributeP[0].equalsIgnoreCase(String.valueOf(idproduct))) {
+                    System.out.println("\tenter the ID of the Worker:\t ");
+                    int idworker = Integer.parseInt(input.nextLine());
+                    while ((line2 = reader.readLine()) != null) {
+                        sb.append(line2).append("\n");
+                        line2.trim();
+                        distributeW = line2.split(" , ");
+                            if (distributeW[0].equalsIgnoreCase(String.valueOf(idworker))) {
+                                    String[] parts = line2.split(" , ");
+                                    parts[3] = "Not available";
+                                    parts[4] = distributeP[1];
+                                    String newLine = String.join(" , ", parts);
+                                    workerarray.add(newLine);
+                                    information = "Product id :\t" + distributeP[0] + "    Product Name :\t" + distributeP[1] + "     delivery date :\t" + distributeP[5] + "\n" + "   Worker name :\t" + distributeW[1] + "   Worker Phone :\t" + distributeW[2];
+                                    System.out.println(information);
+                                    System.out.println(" the statue of product : \t in treatment");
+                            } else {
+                                workerarray.add(line2);
+                            }
+                    }
+                } /*else {
+                    output = "Not found\n all the workers are Not Available Now >-< \n the statue of product : \t waiting ";
+                }*/
             }
-            System.out.println(output);
-            break;
+           // System.out.println(output);
+        try {
+            FileWriter writer = new FileWriter(workerfile);
+            for (int i = 0; i < workerarray.size(); i++) {
+                writer.append(workerarray.get(i));
+                writer.append("\n");
+            }
+            writer.close();
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 
-    public void Deleteproduct(ArrayList<String> arrayList, Scanner input) {
-        System.out.println("enter any id or word to delete a record");
-        String searchKey = input.next();
-        String line;
+    public void Deleteproduct(ArrayList<String> arrayList) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader("product.txt"));
+            String Delete[] = null;
+
+            System.out.println("-----Delete Product------\n");
+            System.out.println("\tenter the ID of the product:\t ");
+            int id = input.nextInt();
+            String line;
+            StringBuilder sb = new StringBuilder();
             while ((line = reader.readLine()) != null) {
-                if (line.contains(searchKey)) {
+                sb.append(line).append("\n");
+                line.trim();
+                Delete = line.split(" , ");
+                if ((Delete[0].equalsIgnoreCase(String.valueOf(id)))) {
                     System.out.println(line);
                     continue;
                 } else {
@@ -174,43 +206,53 @@ public class Product {
         }
     }
 
-    public static void updateproduct(ArrayList<String> arrayList, Scanner input) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(productfile));
-        System.out.println("-----Update Product------\n");
-        System.out.println("\tenter the ID of the product:\t ");
-        int id = Integer.parseInt(input.nextLine());
-        String[] UpdateP = null;
-        String Line;
-        while ((Line = reader.readLine()) != null) {
-            if (UpdateP[0].equalsIgnoreCase(String.valueOf(id))) {
-                Line.trim();
-                UpdateP = Line.split(" , ");
-                System.out.println("enter the text you want to change");
-                String oldValue = input.next();
-                System.out.println("enter the new text you want to change");
-                String newValue = input.next();
-                arrayList.add(Line.replace(oldValue, newValue));
-            } else {
-                arrayList.add(Line);
+    public static void updateproduct(ArrayList<String> arrayList) throws IOException {
+        try {
+            String update[] = null;
+            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            System.out.println("-----Update Product------\n");
+            System.out.println("\tenter the ID of the product:\t ");
+            int id = input.nextInt();
+            String line;
+            StringBuilder sb = new StringBuilder();
+            while ((line = reader.readLine()) != null) {
+                sb.append(line).append("\n");
+                line.trim();
+                update = line.split(" , ");
+                if (update[0].equalsIgnoreCase(String.valueOf(id))) {
+                    BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+                    System.out.print("Enter the data you want to update : ");
+                    String olddata = consoleReader.readLine();
+                    System.out.print("Enter the new data : ");
+                    String newdata = consoleReader.readLine();
+                    arrayList.add(line.replace(olddata, newdata));
+                    System.out.println(" File Update Successfully.");
+                } else {
+               //     System.out.println(" An error occurred while updating the file.");
+                    arrayList.add(line);
+                }
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    try {
-        FileWriter writer = new FileWriter(productfile);
-        for (int i = 0; i < arrayList.size(); i++) {
-            writer.append(arrayList.get(i));
-            writer.append("\n");
+        try {
+            FileWriter writer = new FileWriter(productfile);
+            for (int i = 0; i < arrayList.size(); i++) {
+                writer.append(arrayList.get(i));
+                writer.append("\n");
+            }
+            writer.close();
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        writer.close();
-    }catch(Exception e) {
-        System.out.println(e);
     }
-}
+
     public void Findproduct() throws IOException {
         System.out.println("-----Find Product------\n");
         System.out.println("\tenter the Name of the product:\t ");
-        String Namefind=input.nextLine();
+        String Namefind = input.nextLine();
         String[] FindP = null;
-        String output=null;
+        String output = null;
         while (true) {
             FileInputStream fin = new FileInputStream(productfile);
             Scanner sci = new Scanner(fin);
@@ -219,55 +261,36 @@ public class Product {
                 Line.trim();
                 FindP = Line.split(" , ");
                 if (FindP[1].equalsIgnoreCase(Namefind)) {
-                    String information = "Product id :\t" + FindP[0] +"    Product Name :\t"+FindP[1]+"     Product Heigh:\t"+FindP[2]+"    Product Width :\t"+FindP[3]+"     delivery date :\t"+FindP[4];
-                    output=information;
-            //        fin.close();
+                    String information = "Product id :\t" + FindP[0] + "    Product Name :\t" + FindP[1] + "     Product Heigh:\t" + FindP[2] + "    Product Width :\t" + FindP[3] + "     Type of product :\t" + FindP[4]+"     delivery date :\t" + FindP[5];
+                    output = information;
+                    //        fin.close();
                     break;
-                } else{
-                   output="Not found";}
+                } else {
+                    output = "Not found";
+                }
             }
             System.out.println(output);
             break;
         }
 
     }
-    public void UpdateWorker(int id,String newstate,String name,String phone,String location,String productname) throws IOException {
-        String tempfile= "temp.txt";
-        String filepath="Worker.txt";
-        File oldfile=new File(filepath);
-        File newfile=new File(tempfile);
-      //  int idu ;
-        String[] w = null;
-        try
-        {
-            FileWriter fW = new FileWriter(tempfile,true);
-            BufferedWriter bW=new BufferedWriter(fW);
-            PrintWriter pW=new PrintWriter(bW);
-            Scanner x = new Scanner(new File(filepath));
-            x.useDelimiter("[,\n]");
-            while (x.hasNextLine())
-            {
-                String Line = x.nextLine();
-                Line.trim();
-                w = Line.split(" , ");
-              //  idu= Integer.parseInt(x.next());
-                if(w[0].equals(id))
-                {
-                    pW.println(id+" , "+name+" , "+phone+" , "+location+" , "+newstate+" , "+productname);}
 
+    public void listofworker() throws IOException {
+        try {
+            FileInputStream fileInputStream = new FileInputStream("Worker.txt");
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
+            byte[] buffer = new byte[1024];
+            int bytesRead;
+            StringBuilder stringBuilder = new StringBuilder();
+            while ((bytesRead = bufferedInputStream.read(buffer)) != -1) {
+                stringBuilder.append(new String(buffer, 0, bytesRead));
             }
-            x.close();
-            pW.flush();
-            pW.close();
-        //    oldfile.delete();
-          //  File dump =new File(filepath);
-         //   newfile.renameTo(dump);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            // Close the streams
+            bufferedInputStream.close();
+            fileInputStream.close();
+            System.out.println(stringBuilder.toString());
+        }catch (IOException e) {
+            e.printStackTrace();
         }
     }
-    public void changestatue(String st){
-        Statues=st;
-    }
-
 }

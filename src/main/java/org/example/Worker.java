@@ -2,6 +2,8 @@ package org.example;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Worker {
@@ -11,7 +13,7 @@ public class Worker {
     public static int id;
     public static String name;
     public static String phone;
-    public static String address;
+  //  public static String address;
     public static String Statues;
     public static String productname;
 
@@ -42,20 +44,12 @@ public class Worker {
         Worker.phone = phone;
     }
 
-    public static String getAddress() {
-        return address;
-    }
-
     public static String getProductname() {
         return productname;
     }
 
     public static void setProductname(String productname) {
         Worker.productname = productname;
-    }
-
-    public static void setAddress(String address) {
-        Worker.address = address;
     }
 
     public static String getStatues() {
@@ -65,22 +59,19 @@ public class Worker {
     public static void setStatues(String statues) {
         Statues = statues;
     }
+    private List<Product> orders = new ArrayList<Product>();
 
-    public Worker(int idW, String nameW, String phoneW, String addressW, String StatuesW, String productNameW) {
+    public Worker(int idW, String nameW, String phoneW, String StatuesW, String productNameW) {
         this.id = idW;
         this.name = nameW;
         this.phone = phoneW;
-        this.address = addressW;
+    //    this.address = addressW;
         this.Statues = StatuesW;
         this.productname = productNameW;
     }
 
     public static String getUserData() {
-        return id + " , " + name + " , " + phone + " , " + address + " , " + Statues + " , " + productname;
-    }
-
-    public void readworkerdata() {
-        readfromuser();
+        return id + " , " + name + " , " + phone + " , " + Statues + " , " + productname;
     }
 
     public void readfromuser() {
@@ -91,16 +82,16 @@ public class Worker {
         String nameW = input.nextLine();
         System.out.println("the Phone of the worker:");
         String phoneW = input.nextLine();
-        System.out.println("the address of the worker:");
-        String adressW = input.nextLine();
+       /* System.out.println("the address of the worker:");
+        String adressW = input.nextLine();*/
         System.out.println("the Statues:");
         String statuesW = input.nextLine();
-        String productNameW = "";
-        writeWorker(idW, nameW, phoneW, adressW, statuesW, productNameW);
+        String productNameW = "null";
+        writeWorker(idW, nameW, phoneW, statuesW, productNameW);
     }
 
-    public void writeWorker(int id, String name, String Phone, String address, String statues, String productname) {
-        Worker W = new Worker(id, name, Phone, address, statues, productname);
+    public void writeWorker(int id, String name, String Phone, String statues, String productname) {
+        Worker W = new Worker(id, name, Phone, statues, productname);
 
         try {
             FileWriter writer = new FileWriter(workerfile, true);
@@ -112,7 +103,5 @@ public class Worker {
             System.out.println(e);
         }
     }
-    public void changestatue(String st){
-        Statues=st;
-    }
+
 }
