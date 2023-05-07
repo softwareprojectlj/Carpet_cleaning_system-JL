@@ -6,14 +6,14 @@ import io.cucumber.java.en.When;
 import org.example.Customer;
 
 import static org.example.Customer.*;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class RecordCustomer {
 
     Customer customer1=new Customer();
     @Given("that I Choose the new customer registration option")
     public void that_i_choose_the_new_customer_registration_option() {
-        customer1.record("1","lemara","059821346","Tulkaarem");
+        customer1.record("1","lemara","059821346","Tulkaarem","jsdfgjsdf");
     }
 
 
