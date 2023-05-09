@@ -18,7 +18,7 @@ public class Customer {
         Customer.idc = idc;
     }
 
-    static String idc;
+     static String idc;
      static String namec;
      static String phonec;
 
