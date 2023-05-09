@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class Worker {
 
-    public static String workerfile = "Worker.txt";
+    public static final String workerfile = "Worker.txt";
     Scanner input = new Scanner(System.in).useDelimiter("\n");
-    public static int id;
+   static  int id;
     public static String name;
     public static String phone;
-  //  public static String address;
+    //  public static String address;
     public static String Statues;
     public static String productname;
 
@@ -65,7 +65,7 @@ public class Worker {
         this.id = idW;
         this.name = nameW;
         this.phone = phoneW;
-    //    this.address = addressW;
+        //    this.address = addressW;
         this.Statues = StatuesW;
         this.productname = productNameW;
     }

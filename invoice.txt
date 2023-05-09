@@ -1,5 +1,10 @@
-Product Name :	Farah
-Type of product : 	carpet
-day delivered :	6/6/2023
- You have a discount equal 10% because your price > 250 ^-^ :243.0
+Product Name :	carpet1
+Type of product : 	2/3/2023
+day delivered :	80
+You have a discount equal 10% because your price > 250 ^-^ :342.0
+
+Product Name :	carpit29
+Type of product : 	9/2/2023
+day delivered :	380
+ You have a discount equal 10% because your price > 250 ^-^ :342.0
 
