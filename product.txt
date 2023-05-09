@@ -6,4 +6,4 @@ id   , name , height , width , Delivery time , price , state , Cid , prizestate
 2324 , carpet3 , 3 , 4 , 2/5/2023 , 80 , waiting , 2354 , no
 8424 , cover4 , 5 , 6.5 , 3/4/2023 , 80 , waiting , 2354 , yes
 2134 , carpit29 , 99 , 99 , 9/2/2023 , 380 , in treatment , 7654 , no
-4256 , carpit23 , 9 , 8 , 9/5/2023 , 243 , waiting , 4543 , no
+4256 , carpit23 , 9 , 8 , 9/4/2022 , 243 , waiting , 4543 , no

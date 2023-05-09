@@ -213,7 +213,7 @@ public class Product {
             StringBuilder sb = new StringBuilder();
             while ((line = reader.readLine()) != null) {
                 sb.append(line).append("\n");
-                line.trim();
+
                 Delete = line.split(" , ");
                 if ((Delete[0].equalsIgnoreCase(String.valueOf(id)))) {
                     System.out.println(line);
@@ -251,7 +251,7 @@ public class Product {
             StringBuilder sb = new StringBuilder();
             while ((line = reader.readLine()) != null) {
                 sb.append(line).append("\n");
-                line.trim();
+
                 update = line.split(" , ");
                 if (update[0].equalsIgnoreCase(String.valueOf(id))) {
                     BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
@@ -292,7 +292,7 @@ public class Product {
             Scanner sci = new Scanner(fin);
             while (sci.hasNextLine()) {
                 String Line = sci.nextLine();
-                Line.trim();
+
                 FindP = Line.split(" , ");
                 if (FindP[1].equalsIgnoreCase(Namefind)) {
                     String information = "Product id :\t" + FindP[0] + "    Product Name :\t" + FindP[1] + "     Product Heigh:\t" + FindP[2] + "    Product Width :\t" + FindP[3] + "     delivery date :\t" + FindP[4];
@@ -427,14 +427,14 @@ public class Product {
                 Scanner sci = new Scanner(fin);
                 while (sci.hasNextLine()) {
                     String Line = sci.nextLine();
-                    Line.trim();
+
                     distributeP = Line.split(" , ");
                     if (distributeP[0].equalsIgnoreCase(String.valueOf(idproduct))) {
                         System.out.println("\tenter the ID of the Worker:\t ");
                         int idworker = Integer.parseInt(input.nextLine());
                         while ((line2 = reader.readLine()) != null) {
                             sb.append(line2).append("\n");
-                            line2.trim();
+
                             distributeW = line2.split(" , ");
                             if (distributeW[0].equalsIgnoreCase(String.valueOf(idworker))) {
                                 String[] parts = line2.split(" , ");
@@ -475,7 +475,7 @@ public class Product {
            String line;
            while((line= br.readLine())!= null)
            {
-               line.trim();
+
                updatestate=line.split(" , ");
                if(updatestate[0].equalsIgnoreCase(String.valueOf(idupdd)))
                {
