@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update small bug2">
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683623607889</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update customer 1">
+      <created>1683624034472</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683624034472</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update customer 2">
+      <created>1683624242180</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683624242180</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,7 +346,9 @@
     <MESSAGE value="final commit (All project)" />
     <MESSAGE value="update small bug1" />
     <MESSAGE value="update small bug2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update small bug2" />
+    <MESSAGE value="update customer 1" />
+    <MESSAGE value="update customer 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,12 +18,12 @@ public class Customer {
         Customer.idc = idc;
     }
 
-    public static String idc;
-    public static String namec;
-    public static String phonec;
+    static String idc;
+     static String namec;
+     static String phonec;
 
-    public static String addressc;
-    public static String emailc,eemailt;
+     static String addressc;
+     static String emailc,eemailt;
 
 
     public static String getEmailc() {
