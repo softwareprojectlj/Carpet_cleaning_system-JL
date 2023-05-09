@@ -6,7 +6,7 @@ import java.util.Scanner;
 import static org.example.Main.*;
 
 public class Customer {
-    final static String filenamecustomer = "customerdata.txt";
+    static String filenamecustomer = "customerdata.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
 
 
