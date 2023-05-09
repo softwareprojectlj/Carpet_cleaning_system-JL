@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer 2">
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
     </list>
@@ -309,7 +309,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683624242180</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update customer 3">
+      <created>1683634339484</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683634339484</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update customer 4">
+      <created>1683634482693</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683634482693</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +362,9 @@
     <MESSAGE value="update small bug2" />
     <MESSAGE value="update customer 1" />
     <MESSAGE value="update customer 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer 2" />
+    <MESSAGE value="update customer 3" />
+    <MESSAGE value="update customer 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
