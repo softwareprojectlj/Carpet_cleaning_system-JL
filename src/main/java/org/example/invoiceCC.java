@@ -72,7 +72,6 @@ public class invoiceCC {
           Scanner sci = new Scanner(fin);
           while (sci.hasNextLine()) {
               String Line = sci.nextLine();
-        Line.trim();
         data = Line.split(" , ");
         if (data[0].startsWith(String.valueOf(id))) {
             String infoemation = "Product Name :\t" + data[1] + "\n" + "Price :\t" + getprice(data[2], data[3]) + "\n" + "day delivered :\t" + data[4] + "\n-------------------------------------------------------------------------------" + "\n";
