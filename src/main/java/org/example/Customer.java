@@ -63,12 +63,12 @@ public class Customer {
         Customer.addressc = addressc;
     }
 
-    public Customer(String id,String name, String phone, String address,String email){
-        this.idc=id;
-        this.namec=name;
-        this.phonec=phone;
-        this.addressc=address;
-        this.emailc=email;
+    public Customer(String idc,String namec, String phonec, String addressc,String emailc){
+        this.idc=idc;
+        this.namec=namec;
+        this.phonec=phonec;
+        this.addressc=addressc;
+        this.emailc=emailc;
     }
     public  String getUserData(){
         return  idc+" , "+ namec+" , " + phonec +" , " +addressc+" , " +emailc;
