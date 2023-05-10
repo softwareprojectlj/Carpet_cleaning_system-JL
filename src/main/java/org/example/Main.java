@@ -38,7 +38,6 @@ public class Main {
         }
     }
     public static void mainmenu(){
-        LOGGER.log(Level.INFO,"------------------------");
         LOGGER.log(Level.INFO,"       <MENU>");
         LOGGER.log(Level.INFO,"[1] Customer data .");
         LOGGER.log(Level.INFO,"[2] Product data .");
@@ -47,8 +46,7 @@ public class Main {
         LOGGER.log(Level.INFO,"[5] Financial Statistics .");
         LOGGER.log(Level.INFO,"[6] Print invoice .");
         LOGGER.log(Level.INFO,"[7] Logout .");
-        LOGGER.log(Level.INFO,"------------------------");
-        LOGGER.log(Level.INFO,"Enter your choice's number : ");
+        LOGGER.log(Level.INFO,"Enter your choice number : ");
     }
     public static void mainchoice(int s) throws IOException {
 
