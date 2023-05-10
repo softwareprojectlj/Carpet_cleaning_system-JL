@@ -61,7 +61,7 @@ public class Customer {
             writer.close();
             LOGGER.log(Level.INFO,YELLOW+"Customer Recorded Successfully."+RESET);
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
 
@@ -87,7 +87,7 @@ public class Customer {
                     }
                 }
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
@@ -97,7 +97,7 @@ public class Customer {
             }
             writer.close();
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO, String.valueOf(e));
         }
 
     }
@@ -120,8 +120,7 @@ public class Customer {
             }
 
         }catch (Exception e){
-            e.printStackTrace();
-
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
@@ -133,7 +132,7 @@ public class Customer {
             writer.close();
 
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }finally {
             LOGGER.log(Level.INFO,YELLOW+"Customer Deleted Successfully."+RESET);
         }}
@@ -153,13 +152,9 @@ public class Customer {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
-
-
-
-
     public static void getUserByname(Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
@@ -172,11 +167,10 @@ public class Customer {
                 }
             }
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
     public static void getAllcustomer(){
-
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             String line;
@@ -187,7 +181,7 @@ public class Customer {
             }
             LOGGER.log(Level.INFO,"------------------------------------------------------------");
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
 }
