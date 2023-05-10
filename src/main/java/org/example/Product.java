@@ -84,7 +84,7 @@ public class Product {
         }
     }
 
-    public static void deleteRecordproById(ArrayList<String> arrayList, Scanner input) {
+    public  void deleteRecordproById(ArrayList<String> arrayList, Scanner input) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             logger.log(Level.INFO,"Enter An Id To Delete A Product : ");
@@ -162,7 +162,7 @@ public class Product {
     }
 
 
-    public static void updateproduct(ArrayList<String> arrayList) throws IOException {
+    public  void updateproduct(ArrayList<String> arrayList) throws IOException {
         try {
             String [] update = null;
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
@@ -203,7 +203,7 @@ public class Product {
         }
     }
 
-    public static void Findproduct() throws IOException {
+    public  void Findproduct() throws IOException {
         logger.log(Level.INFO,"-----Find Product------\n");
         logger.log(Level.INFO,"enter the Name of the product: ");
         String namefind = input.nextLine();
@@ -427,7 +427,7 @@ public class Product {
         }
     }
 
-    public static void getAllproduct() {
+    public  void getAllproduct() {
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
