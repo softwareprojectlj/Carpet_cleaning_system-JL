@@ -50,9 +50,9 @@ public class Product {
         logger.log(Level.INFO,"the name of the product:");
         String namer = input.nextLine();
         logger.log(Level.INFO,"the height of the product:");
-        String Hr = input.nextLine();
+        String hR = input.nextLine();
         logger.log(Level.INFO,"the width of the product:");
-        String Wr = input.nextLine();
+        String wR = input.nextLine();
         logger.log(Level.INFO,"the Delivery time:");
         String dayr = input.nextLine();
         logger.log(Level.INFO,"the id for customer:");
@@ -61,9 +61,9 @@ public class Product {
         String pstate = input.nextLine();
         String statep = "waiting";
 
-        int pp=getprice(Wr, Hr);
+        int pp=getprice(wR, hR);
         int priced= applyDiscount(pp);
-        writeproduct(idr, namer, Hr, Wr, dayr, priced, statep, idcust ,pstate);
+        writeproduct(idr, namer, hR, wR, dayr, priced, statep, idcust ,pstate);
     }
 
     public Product() {
@@ -126,7 +126,7 @@ public class Product {
             File inputFile = new File(PRODUCTFILE);
 
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-            String [] Delete = null;
+            String [] delete = null;
 
             logger.log(Level.INFO,"-----Delete Product------\n");
             logger.log(Level.INFO,"enter the ID of the product: ");
@@ -136,8 +136,8 @@ public class Product {
             while ((line = reader.readLine()) != null) {
                 sb.append(line).append("\n");
 
-                Delete = line.split(" , ");
-                if ((Delete[0].equalsIgnoreCase(String.valueOf(id)))) {
+                delete = line.split(" , ");
+                if ((delete[0].equalsIgnoreCase(String.valueOf(id)))) {
                     logger.log(Level.INFO,line);
                 } else {
                     arrayList.add(line);
@@ -206,18 +206,18 @@ public class Product {
     public static void Findproduct() throws IOException {
         logger.log(Level.INFO,"-----Find Product------\n");
         logger.log(Level.INFO,"enter the Name of the product: ");
-        String Namefind = input.nextLine();
-        String[] FindP = null;
+        String namefind = input.nextLine();
+        String[] findP = null;
         String output = null;
         while (true) {
             FileInputStream fin = new FileInputStream(PRODUCTFILE);
             Scanner sci = new Scanner(fin);
             while (sci.hasNextLine()) {
-                String Line = sci.nextLine();
+                String line = sci.nextLine();
 
-                FindP = Line.split(" , ");
-                if (FindP[1].equalsIgnoreCase(Namefind)) {
-                    String information = "Product id :\t" + FindP[0] + "    Product Name :\t" + FindP[1] + "     Product Heigh:\t" + FindP[2] + "    Product Width :\t" + FindP[3] + "     delivery date :\t" + FindP[4];
+                findP = line.split(" , ");
+                if (findP[1].equalsIgnoreCase(namefind)) {
+                    String information = "Product id :\t" + findP[0] + "    Product Name :\t" + findP[1] + "     Product Heigh:\t" + findP[2] + "    Product Width :\t" + findP[3] + "     delivery date :\t" + findP[4];
                     output = information;
                     break;
                 } else {
@@ -321,9 +321,9 @@ public class Product {
                 FileInputStream fin = new FileInputStream(PRODUCTFILE);
                 Scanner sci = new Scanner(fin);
                 while (sci.hasNextLine()) {
-                    String Line = sci.nextLine();
+                    String line = sci.nextLine();
 
-                    distributeP = Line.split(" , ");
+                    distributeP = line.split(" , ");
                     if (distributeP[0].equalsIgnoreCase(String.valueOf(idproduct))) {
                         logger.log(Level.INFO,"\tenter the ID of the Worker:\t ");
                         int idworker = Integer.parseInt(input.nextLine());
