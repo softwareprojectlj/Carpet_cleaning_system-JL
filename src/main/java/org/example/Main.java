@@ -24,15 +24,9 @@ public class Main {
     static String Password;
 
 
-    public static void main(String[] args) throws IOException {
-
-
-        readlogindata();
-
-    }
+    public static void main(String[] args) {readlogindata();}
 
     public static void readlogindata() {
-
         while (true){
         Scanner input1 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Username :   ");
@@ -42,8 +36,6 @@ public class Main {
         Password = input2.next();
         verify(Username,Password);
         }
-
-
     }
     public static void mainmenu(){
         LOGGER.log(Level.INFO,"------------------------");
@@ -77,32 +69,25 @@ public class Main {
         }
         else if (s==5){
             Product.writef();
-
         }
         else if (s==6){
             invoiceCC I=new invoiceCC();
             I.readfromuser();
         }
         else if (s==7){
-
             System.exit(1);
-        }
-
-
-    }
-
-
+        }}
     public static void customermenu(){
         while (true) {
-            System.out.println("-------------------------");
-            System.out.println("     <Customer MENU>     ");
-            System.out.println("[1] Add Customer .");
-            System.out.println("[2] Update Customer .");
-            System.out.println("[3] Delete Customer .");
-            System.out.println("[4] List The Customer By Name .");
-            System.out.println("[5] Back .");
-            System.out.println("-------------------------");
-            System.out.println("Enter your choice's number : ");
+            LOGGER.log(Level.INFO,"-------------------------");
+            LOGGER.log(Level.INFO,"     <Customer MENU>     ");
+            LOGGER.log(Level.INFO,"[1] Add Customer .");
+            LOGGER.log(Level.INFO,"[2] Update Customer .");
+            LOGGER.log(Level.INFO,"[3] Delete Customer .");
+            LOGGER.log(Level.INFO,"[4] List The Customer By Name .");
+            LOGGER.log(Level.INFO,"[5] Back .");
+            LOGGER.log(Level.INFO,"-------------------------");
+            LOGGER.log(Level.INFO,"Enter your choice's number : ");
             int x = in.nextInt();
             Customer customer = new Customer();
             ArrayList<String> arrayList = new ArrayList<String>();
@@ -120,30 +105,25 @@ public class Main {
                 customer.getAllcustomer();
             } else if (x == 4) {
                 customer.getUserByname(in);
-
             } else if (x == 5) {
                 break;
-            }
-
-        }
-    }
+            }}}
 
     public static void productmenu() throws IOException {
         while (true) {
-            System.out.println("-------------------------");
-            System.out.println("     <Customer MENU>     ");
-            System.out.println("[1] Add Product .");
-            System.out.println("[2] Update Product .");
-            System.out.println("[3] Delete Product .");
-            System.out.println("[4] List The Product By Name .");
-            System.out.println("[5] Back .");
-            System.out.println("-------------------------");
-            System.out.println("Enter your choice's number : ");
+            LOGGER.log(Level.INFO,"-------------------------");
+            LOGGER.log(Level.INFO,"     <Product MENU>     ");
+            LOGGER.log(Level.INFO,"[1] Add Product .");
+            LOGGER.log(Level.INFO,"[2] Update Product .");
+            LOGGER.log(Level.INFO,"[3] Delete Product .");
+            LOGGER.log(Level.INFO,"[4] List The Product By Name .");
+            LOGGER.log(Level.INFO,"[5] Back .");
+            LOGGER.log(Level.INFO,"-------------------------");
+            LOGGER.log(Level.INFO,"Enter your choice's number : ");
             int y = in.nextInt();
             Product product = new Product();
             ArrayList<String> arrayListP = new ArrayList<String>();
             if (y == 1) {
-
                 product.readfromuserp();
                 product.getAllproduct();
             } else if (y == 2) {
@@ -156,14 +136,9 @@ public class Main {
                 product.getAllproduct();
             } else if (y == 4) {
                 product.Findproduct();
-
-
             } else if (y == 5) {
                 break;
-            }
-
-        }
-    }
+            }}}
 
     public static void verify(String nameuser, String pass){
         String line;
