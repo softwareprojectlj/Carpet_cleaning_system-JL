@@ -11,11 +11,11 @@ import static org.example.Worker.workerfile;
 public class Product {
     public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
-    public static int idp;
-    public static int idcus ;
-    public static int idprodis ;
+     static int idp;
+     static int idcus ;
+     static int idprodis ;
     public static String name,idtest;
-    public static String height;
+     static String height = " ";
     public static String width;
     public static String dayfinish;
     public static String statusP;
