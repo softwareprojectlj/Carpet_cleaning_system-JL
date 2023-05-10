@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update customer lemara 20 WITHOUT edit idc" />
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update customer lemara 21 after edit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customerdata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -461,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683721538805</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="update customer lemara 21 after edit">
+      <created>1683721862639</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1683721862639</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit num 3" />
     <MESSAGE value="commit num 4" />
     <MESSAGE value="last 8-3" />
     <MESSAGE value="lastttttttttttt" />
@@ -513,7 +523,8 @@
     <MESSAGE value="update customer lemara 18 after edit idc" />
     <MESSAGE value="update customer lemara 19 after edit idc" />
     <MESSAGE value="update customer lemara 20 WITHOUT edit idc" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 20 WITHOUT edit idc" />
+    <MESSAGE value="update customer lemara 21 after edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 21 after edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

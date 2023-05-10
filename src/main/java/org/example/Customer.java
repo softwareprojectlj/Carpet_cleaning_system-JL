@@ -27,7 +27,7 @@ public class Customer {
         customerEmail=email;
     }
     public  String getUserData(){
-        return  customerId+" , "+customerName+" , " + customerPhone +" , " +customerAddress+" , " +customerEmail;
+        return  customerId+" , "+customerName+" , "+ customerPhone +" , " +customerAddress+" , "+customerEmail;
     }
 
     public void readfromuser(){
@@ -130,8 +130,6 @@ public class Customer {
           for (int i=0;i<arrayList.size();i++){
                 writer.append( arrayList.get(i));
                 writer.append("\n");
-
-
             }
             writer.close();
 
