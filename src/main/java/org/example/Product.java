@@ -80,7 +80,7 @@ public class Product {
             logger.log(Level.INFO,"product added successfully!");
             logger.log(Level.INFO,"the statue of product : \t Waiting");
         } catch (IOException e) {
-           e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
 
@@ -102,7 +102,7 @@ public class Product {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
         try {
             FileWriter writer = new FileWriter(PRODUCTFILE);
@@ -115,7 +115,7 @@ public class Product {
             writer.close();
 
         } catch (Exception e) {
-           e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         } finally {
             logger.log(Level.INFO,YELLOW + "Product Deleted Successfully." + RESET);
         }
@@ -144,7 +144,7 @@ public class Product {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
         try {
             FileWriter writer = new FileWriter(PRODUCTFILE);
@@ -155,7 +155,7 @@ public class Product {
             writer.close();
 
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         } finally {
             logger.log(Level.INFO,"done!");
         }
@@ -189,7 +189,7 @@ public class Product {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
         try {
             FileWriter writer = new FileWriter(PRODUCTFILE);
@@ -199,7 +199,7 @@ public class Product {
             }
             writer.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
 
@@ -248,7 +248,7 @@ public class Product {
             }
         } catch (Exception e) {
             logger.log(Level.INFO,"lmlm");
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
     public static void countno(int r){
@@ -270,7 +270,7 @@ public class Product {
             }
         } catch (Exception e) {
             logger.log(Level.INFO,"lmlm");
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
 
@@ -286,7 +286,7 @@ public class Product {
                 writer.close();
                 logger.log(Level.INFO,"open the Financial file to show the state of money ^_^ ");
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.log(Level.INFO,String.valueOf(e));
             }
         }
 
@@ -304,7 +304,7 @@ public class Product {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
 
@@ -355,7 +355,7 @@ public class Product {
                     }
                     writer.close();
                 } catch (Exception e) {
-                    e.printStackTrace();
+                           logger.log(Level.INFO,String.valueOf(e));
                 }
             }
 
@@ -381,7 +381,7 @@ public class Product {
                    productpp.add(line);}
            }
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
         try{
             FileWriter writer=new FileWriter(PRODUCTFILE);
@@ -391,7 +391,7 @@ public class Product {
             }
             writer.close();
         } catch (IOException e) {
-          e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
     public Integer getprice(String w,String h)
@@ -439,7 +439,7 @@ public class Product {
             }
             logger.log(Level.INFO,"------------------------------------------------------------");
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
 
     }
@@ -457,7 +457,7 @@ public class Product {
             fileInputStream.close();
             logger.log(Level.INFO, String.valueOf(stringBuilder));
         }catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.INFO,String.valueOf(e));
         }
     }
 }
