@@ -110,6 +110,7 @@ public class Main {
 
     public static void productmenu() throws IOException {
         while (true) {
+
             LOGGER.log(Level.INFO,"-------------------------");
             LOGGER.log(Level.INFO,"     <Product MENU>     ");
             LOGGER.log(Level.INFO,"[1] Add Product .");
