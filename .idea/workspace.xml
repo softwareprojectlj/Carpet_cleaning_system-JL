@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer lemara 9">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customerdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customerdata.txt" afterDir="false" />
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer lemara 10">
       <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +379,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683707117827</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update customer lemara 10">
+      <created>1683714120527</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714120527</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update customer lemara 10">
+      <created>1683714145910</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714145910</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +439,8 @@
     <MESSAGE value="update customer lemara 7" />
     <MESSAGE value="update customer lemara 8" />
     <MESSAGE value="update customer lemara 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 9" />
+    <MESSAGE value="update customer lemara 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

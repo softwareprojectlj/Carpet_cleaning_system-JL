@@ -39,7 +39,6 @@ public class Customer {
 
         Scanner input = new Scanner(System.in).useDelimiter("\n");
        // Logger.log("Customer's Id :  ");
-
         System.out.print("Customer's Id :  ");
         id1= input.nextLine();
         System.out.print("Enter Customer's Name :  ");
