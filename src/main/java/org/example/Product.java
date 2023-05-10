@@ -9,9 +9,11 @@ import static org.example.Main.*;
 import static org.example.Worker.workerfile;
 
 public class Product {
-    public static String productfile = "product.txt";
+    public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
-    public static int idp, idcus ,idprodis;
+    public static int idp;
+    public static int idcus ;
+    public static int idprodis ;
     public static String name,idtest;
     public static String height;
     public static String width;
