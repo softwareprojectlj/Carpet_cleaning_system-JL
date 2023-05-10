@@ -13,12 +13,12 @@ public class Worker {
     public static final  String WORKWRFILE = "Worker.txt";
     Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Worker");
-    private static int id;
-    private static String name;
-    private static String phone;
+   static int id;
+     static String name;
+    static String phone;
 
-    private static String statues;
-    private static String productname;
+     static String statues;
+    static String productname;
 
 
     public static int getId() {
@@ -82,7 +82,7 @@ public class Worker {
 
     public void writeWorker(int id, String name, String phone, String statues, String productname) {
         try {
-             this.id=id;
+             id=id;
            this. name=name;
            this. phone=phone;
            this. statues=statues;
