@@ -13,34 +13,34 @@ public class Product {
     public static final String PRODUCTFILE = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Product");
-     private  int PRODUCT_id;
+     private  int productID;
      private   int idprodis ;
-    private   String PRODUCTname;
+    private   String productNAME;
     static String idtest;
-    private String PRODUCTheight ;
-    private   String PRODUCTwidth;
-    private   String PRODUCTdayfinish;
-    private  int PRODUCTprice;
-    private  String PRODUCTstate;
+    private String productHEIGHT ;
+    private   String productWIDTH;
+    private   String prodcutDFINISH;
+    private  int productPRICE;
+    private  String productSTATE;
     private static int priceyes ;
     private static int priceno;
     private  String prizstate;
-    private  int CustmorID;
+    private  int custmorID;
 
     public Product(int id, String namep, String H, String W, String D, int p, String s, int idcu, String pstate) {
-        PRODUCT_id = id;
-        PRODUCTname = namep;
-        PRODUCTheight = H;
-        PRODUCTwidth = W;
-        PRODUCTdayfinish = D;
-        PRODUCTprice = p;
-        PRODUCTstate = s;
-       CustmorID = idcu;
+        productID = id;
+        productNAME = namep;
+        productHEIGHT = H;
+        productWIDTH = W;
+        prodcutDFINISH = D;
+        productPRICE = p;
+        productSTATE = s;
+       custmorID = idcu;
         prizstate = pstate;
     }
 
     public  String getUserData() {
-        return PRODUCT_id + " , " + PRODUCTname + " , " + PRODUCTheight + " , " + PRODUCTwidth + " , " + PRODUCTdayfinish + " , " + PRODUCTprice + " , " + PRODUCTstate + " , " + CustmorID+ " , " + prizstate;
+        return productID+ " , " + productNAME + " , " +productHEIGHT + " , " + productWIDTH + " , " + prodcutDFINISH + " , " + productPRICE + " , " + productSTATE + " , " + custmorID+ " , " + prizstate;
     }
 
     public void readfromuserp() {
@@ -124,7 +124,6 @@ public class Product {
     public void Deleteproduct(ArrayList<String> arrayList) {
         try {
             File inputFile = new File(PRODUCTFILE);
-            File tempFile = new File("temp.txt");
 
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
             String [] Delete = null;
@@ -397,8 +396,8 @@ public class Product {
     }
     public Integer getprice(String w,String h)
     {
-        PRODUCTwidth=w;
-        PRODUCTheight=h;
+        productWIDTH=w;
+        productHEIGHT=h;
         Double area=(Double.valueOf(w) * Double.valueOf(h));
         if(area<=5 && area>0 )
             price=40;
