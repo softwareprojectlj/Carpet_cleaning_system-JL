@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer lemara 10">
-      <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer lemara 11 from jana's git">
+      <change beforePath="$PROJECT_DIR$/features/distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/distributeorder.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -393,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683714145910</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update customer lemara 10">
+      <created>1683714228300</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714228300</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update customer lemara 11 from jana's git">
+      <created>1683714389299</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714389299</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,7 +454,8 @@
     <MESSAGE value="update customer lemara 8" />
     <MESSAGE value="update customer lemara 9" />
     <MESSAGE value="update customer lemara 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 10" />
+    <MESSAGE value="update customer lemara 11 from jana's git" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 11 from jana's git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
