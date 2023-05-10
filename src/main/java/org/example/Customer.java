@@ -11,10 +11,6 @@ public class Customer {
     private static final Logger LOGGER=Logger.getLogger("org.example.Customer");
     static String filenamecustomer = "customerdata.txt";
 
-
-
-
-
      static String idc;
      static String namec;
      static String phonec;
@@ -23,15 +19,12 @@ public class Customer {
      static String emailc;
     static String eemailt;
 
-
-
-
     public Customer(String id,String name, String phone, String address,String email){
-        this.idc=id;
-        this.namec=name;
-        this.phonec=phone;
-        this.addressc=address;
-        this.emailc=email;
+        idc=id;
+        namec=name;
+        phonec=phone;
+        addressc=address;
+        emailc=email;
     }
     public  String getUserData(){
         return  idc+" , "+ namec+" , " + phonec +" , " +addressc+" , " +emailc;

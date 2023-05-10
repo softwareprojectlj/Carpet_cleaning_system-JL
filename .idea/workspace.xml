@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update customer lemara 15" />
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update customer lemara 16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -405,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683719318829</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="update customer lemara 16">
+      <created>1683719505062</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683719505062</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,7 +464,8 @@
     <MESSAGE value="update lemara 12 1" />
     <MESSAGE value="update lemara 13" />
     <MESSAGE value="update customer lemara 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 15" />
+    <MESSAGE value="update customer lemara 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
