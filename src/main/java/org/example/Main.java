@@ -71,7 +71,7 @@ public class Main {
             Product.writef();
         }
         else if (s==6){
-            INVOICECC I=new INVOICECC();
+            invoiceCC I=new invoiceCC();
             I.readfromuser();
         }
         else if (s==7){
