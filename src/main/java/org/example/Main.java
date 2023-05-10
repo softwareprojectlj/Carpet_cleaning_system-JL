@@ -21,8 +21,8 @@ public class Main {
     static String entrymsg = "Enter your choice number : ";
     static int count;
     static Scanner in=new Scanner(System.in);
-    static String Username;
-    static String Password;
+    static String adminUsername;
+    static String adminPassword;
    static Customer customer = new Customer();
    static Product product = new Product();
 
@@ -33,11 +33,11 @@ public class Main {
         while (true){
         Scanner input1 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Username :   ");
-        Username = input1.next();
+            adminUsername = input1.next();
         Scanner input2 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Password :   ");
-        Password = input2.next();
-        verify(Username,Password);
+            adminPassword = input2.next();
+        verify(adminUsername,adminPassword);
         }
 
     }
