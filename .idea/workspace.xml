@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/INVOICECC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/INVOICECC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara 444" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,20 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00024" summary="test update product jana 2">
-      <created>1683711378185</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1683711378185</updated>
-    </task>
-    <task id="LOCAL-00025" summary="update lemara 12 1">
-      <created>1683714795792</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1683714795792</updated>
     </task>
     <task id="LOCAL-00026" summary="update lemara 13">
       <created>1683715211006</created>
@@ -562,7 +544,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683753618950</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="update main lemara 444">
+      <created>1683754412277</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1683754412277</updated>
+    </task>
+    <task id="LOCAL-00074" summary="update main lemara 444">
+      <created>1683754496352</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1683754496353</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update main lemara 5" />
     <MESSAGE value="update main lemara 6 test" />
     <MESSAGE value="update main lemara 7 test" />
     <MESSAGE value="update main lemara 8 test" />
@@ -614,7 +609,8 @@
     <MESSAGE value="update product lemara 333 يا رب اخر اشي يقل واقوم انام" />
     <MESSAGE value="update main lemara 1 يا رب اخر اشي يقل واقوم انام" />
     <MESSAGE value="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت" />
-    <option name="LAST_COMMIT_MESSAGE" value="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت" />
+    <MESSAGE value="update main lemara 444" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main lemara 444" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
