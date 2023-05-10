@@ -13,8 +13,7 @@ public class Product {
     public static final String PRODUCTFILE = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Product");
-     private  int PRODUCTid;
-     private   int CUSTOMERID ;
+     private  int PRODUCT_id;
      private   int idprodis ;
     private   String PRODUCTname;
     static String idtest;
@@ -29,7 +28,7 @@ public class Product {
     private  int CustmorID;
 
     public Product(int id, String namep, String H, String W, String D, int p, String s, int idcu, String pstate) {
-        PRODUCTid = id;
+        PRODUCT_id = id;
         PRODUCTname = namep;
         PRODUCTheight = H;
         PRODUCTwidth = W;
@@ -41,7 +40,7 @@ public class Product {
     }
 
     public  String getUserData() {
-        return PRODUCTid + " , " + PRODUCTname + " , " + PRODUCTheight + " , " + PRODUCTwidth + " , " + PRODUCTdayfinish + " , " + PRODUCTprice + " , " + PRODUCTstate + " , " + CustmorID+ " , " + prizstate;
+        return PRODUCT_id + " , " + PRODUCTname + " , " + PRODUCTheight + " , " + PRODUCTwidth + " , " + PRODUCTdayfinish + " , " + PRODUCTprice + " , " + PRODUCTstate + " , " + CustmorID+ " , " + prizstate;
     }
 
     public void readfromuserp() {
