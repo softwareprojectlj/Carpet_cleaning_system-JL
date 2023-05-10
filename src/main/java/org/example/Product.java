@@ -177,7 +177,7 @@ public class Product {
             }
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         try {
             FileWriter writer = new FileWriter(productfile);
