@@ -146,7 +146,6 @@ public class Customer {
                 String[] arr = line.split(" , ");
                 if (arr[0].contains(idstatec)) {
                     LOGGER.log(Level.INFO,line);
-                   // eemailt=arr[4];
                     LOGGER.log(Level.INFO,eemailt);
                     test();
                 }
