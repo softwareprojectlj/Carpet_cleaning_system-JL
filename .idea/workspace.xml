@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara test entry msg">
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara test 11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00006" summary="commit num 1">
-      <created>1677742449856</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1677742449857</updated>
     </task>
     <task id="LOCAL-00007" summary="commit num 3">
       <created>1677841155986</created>
@@ -560,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683727148548</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update main lemara test 11">
+      <created>1683727620199</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1683727620199</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update customer lemara 15" />
     <MESSAGE value="update customer lemara 16" />
     <MESSAGE value="update customer lemara 17 after delete this" />
     <MESSAGE value="update customer lemara 17 after edit idc" />
@@ -612,7 +613,8 @@
     <MESSAGE value="update main lemara test 9" />
     <MESSAGE value="update main lemara test 10" />
     <MESSAGE value="update main lemara test entry msg" />
-    <option name="LAST_COMMIT_MESSAGE" value="update main lemara test entry msg" />
+    <MESSAGE value="update main lemara test 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main lemara test 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -20,7 +20,7 @@ public class Customer {
 
     static String eemailt;
 
-    public Customer(String id,String name, String phone, String address,String email){
+    public  Customer(String id,String name, String phone, String address,String email){
         customerId=id;
         customerName=name;
         customerPhone=phone;
@@ -67,7 +67,7 @@ public class Customer {
 
 
 
-    public static void updateRecord1(List<String> arrayList, Scanner input){
+    public  void updateRecord1(List<String> arrayList, Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             LOGGER.log(Level.INFO,"please enter any key to update the record");
@@ -103,7 +103,7 @@ public class Customer {
     }
 
 
-    public static void  deleteRecordById(List<String> arrayList,Scanner input){
+    public  void  deleteRecordById(List<String> arrayList,Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             LOGGER.log(Level.INFO,"Enter An Id To Delete A Customer : ");
@@ -137,7 +137,7 @@ public class Customer {
             LOGGER.log(Level.INFO,YELLOW+"Customer Deleted Successfully."+RESET);
         }}
 
-    public static void gettemail() {
+    public  void gettemail() {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filenamecustomer));
             String idstatec= Product.idtest;
@@ -155,7 +155,7 @@ public class Customer {
             LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
-    public static void getUserByname(Scanner input){
+    public void getUserByname(Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             LOGGER.log(Level.INFO,"Please Enter Name Of Customer To Get Customer Data  :");
@@ -170,7 +170,7 @@ public class Customer {
             LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
-    public static void getAllcustomer(){
+    public  void getAllcustomer(){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             String line;
