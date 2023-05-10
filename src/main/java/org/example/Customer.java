@@ -11,23 +11,23 @@ public class Customer {
     private static final Logger LOGGER=Logger.getLogger("org.example.Customer");
     static String filenamecustomer = "customerdata.txt";
 
-     static String idcustomer;
-     static String namecustomer;
-     static String phonecustomer;
+     static String idCustomer;
+     static String nameCustomer;
+     static String phoneCustomer;
 
-     static String addresscustomer;
-     static String emailcustomer;
+     static String addressCustomer;
+     static String emailCustomer;
     static String eemailt;
 
     public Customer(String id,String name, String phone, String address,String email){
-        idcustomer=id;
-        namecustomer=name;
-        phonecustomer=phone;
-        addresscustomer=address;
-        emailcustomer=email;
+        idCustomer=id;
+        nameCustomer=name;
+        phoneCustomer=phone;
+        addressCustomer=address;
+        emailCustomer=email;
     }
     public  String getUserData(){
-        return  idcustomer+" , "+ namecustomer+" , " + phonecustomer +" , " +addresscustomer+" , " +emailcustomer;
+        return  idCustomer+" , "+ nameCustomer+" , " + phoneCustomer +" , " +addressCustomer+" , " +emailCustomer;
     }
 
     public void readfromuser(){
