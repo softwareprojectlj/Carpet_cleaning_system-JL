@@ -14,14 +14,15 @@ public class Product {
      private static int idp;
      private static int idcus ;
      private static int idprodis ;
-    public static String name,idtest;
+    private static String name;
+    static String idtest;
      static String height = " ";
-    public static String width;
-    public static String dayfinish;
-    public static String statusP;
-    public static int price;
-    public static String state;
-    public static int priceyes , priceno;
+    private static String width;
+    private static String dayfinish;
+    private static int price;
+    private static String state;
+    private static int priceyes ;
+    private static int priceno;
 
     public static String getPrizstate() {
         return prizstate;
