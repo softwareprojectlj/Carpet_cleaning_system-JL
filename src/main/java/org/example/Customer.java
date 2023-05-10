@@ -1,62 +1,57 @@
 package org.example;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static org.example.Main.*;
 
 public class Customer {
+    private static final Logger LOGGER=Logger.getLogger("org.example.Customer");
     static String filenamecustomer = "customerdata.txt";
 
+     private String customerId;
+     private String customerName;
+     private String customerPhone;
 
+     private String customerAddress;
+     private String customerEmail;
 
-
-
-     static String idc;
-     static String namec;
-     static String phonec;
-
-     static String addressc;
-     static String emailc;
     static String eemailt;
 
-
-
-
     public Customer(String id,String name, String phone, String address,String email){
-        this.idc=id;
-        this.namec=name;
-        this.phonec=phone;
-        this.addressc=address;
-        this.emailc=email;
+        customerId=id;
+        customerName=name;
+        customerPhone=phone;
+        customerAddress=address;
+        customerEmail=email;
     }
     public  String getUserData(){
-        return  idc+" , "+ namec+" , " + phonec +" , " +addressc+" , " +emailc;
+        return  customerId+" , "+customerName+" , "+ customerPhone +" , " +customerAddress+" , "+customerEmail;
     }
 
     public void readfromuser(){
 
         Scanner input = new Scanner(System.in).useDelimiter("\n");
-
-        System.out.print("Customer's Id :  ");
-        id1= input.nextLine();
-        System.out.print("Enter Customer's Name :  ");
-        name1=input.nextLine();
-        System.out.print("Enter Customer's Phone :  ");
-        phone1=input.next();
-        System.out.print("Enter Customer's address :  ");
-        address1=input.next();
-        System.out.print("Enter Customer's email :  ");
-        email1=input.next();
-        record(id1,name1,phone1,address1,email1);
+        LOGGER.log(Level.INFO,"Customers Id :  ");
+        customerId= input.nextLine();
+        LOGGER.log(Level.INFO,"Enter Customer Name :  ");
+        customerName=input.nextLine();
+        LOGGER.log(Level.INFO,"Enter Customer Phone :  ");
+        customerPhone=input.next();
+        LOGGER.log(Level.INFO,"Enter Customer address :  ");
+        customerAddress=input.next();
+        LOGGER.log(Level.INFO,"Enter Customer email :  ");
+        customerEmail=input.next();
+        recordcustomer(customerId,customerName,customerPhone,customerAddress,customerEmail);
     }
 
     public Customer() {
 
     }
 
-    public void record(String id,String name, String phone, String address,String email){
+    public void recordcustomer(String id,String name, String phone, String address,String email){
 
         Customer customer= new Customer(id,name,phone,address,email);
         try {
@@ -64,67 +59,60 @@ public class Customer {
             writer.append(customer.getUserData());
             writer.append("\n");
             writer.close();
-            System.out.println(YELLOW+"Customer Recorded Successfully."+RESET);
-
-
+            LOGGER.log(Level.INFO,YELLOW+"Customer Recorded Successfully."+RESET);
         } catch (IOException e) {
-            e.printStackTrace();
-
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
     }
 
 
 
-    public static void updateRecord1(ArrayList<String> arrayList, Scanner input){
+    public static void updateRecord1(List<String> arrayList, Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
-            System.out.println("please enter any key to update the record");
+            LOGGER.log(Level.INFO,"please enter any key to update the record");
             String searchKey=input.next();
             String line;
             while ((line=reader.readLine())!=null) {
                 String[] arr = line.split(",");
                     if (arr[0].contains(searchKey)) {
-                        System.out.println("enter the text you want to change");
+                        LOGGER.log(Level.INFO,"enter the text you want to change");
                         String oldValue = input.next();
-                        System.out.println("enter the new text you want to change");
+                        LOGGER.log(Level.INFO,"enter the new text you want to change");
                         String newValue = input.next();
                         arrayList.add(line.replace(oldValue, newValue));
-                        System.out.println(YELLOW+"Customer Updated Successfully."+RESET);
+                        LOGGER.log(Level.INFO,YELLOW+"Customer Updated Successfully."+RESET);
                     } else {
                         arrayList.add(line);
                     }
-
                 }
-
-
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
-
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
-            for(int i=0;i<arrayList.size();i++){
-                writer.append(arrayList.get(i));
+            for(var item : arrayList){
+                writer.append(item);
                 writer.append("\n");
             }
             writer.close();
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO, String.valueOf(e));
         }
 
     }
 
 
-    public static void  deleteRecordById(ArrayList<String> arrayList,Scanner input){
+    public static void  deleteRecordById(List<String> arrayList,Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
-            System.out.println("Enter An Id To Delete A Customer : ");
+            LOGGER.log(Level.INFO,"Enter An Id To Delete A Customer : ");
             String searchKey=input.next();
             String line;
             while ((line=reader.readLine())!=null) {
                 String[] arr = line.split(" , ");
                 if (arr[0].contains(searchKey)) {
-                    System.out.println(line);
+                    LOGGER.log(Level.INFO,line);
                 }else {
                     arrayList.add(line);
 
@@ -132,24 +120,21 @@ public class Customer {
             }
 
         }catch (Exception e){
-            e.printStackTrace();
-
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
-
-          for (int i=0;i<arrayList.size();i++){
-                writer.append( arrayList.get(i));
+            for(var item : arrayList){
+                writer.append(item);
                 writer.append("\n");
-
-
             }
+
             writer.close();
 
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }finally {
-            System.out.println(YELLOW+"Customer Deleted Successfully."+RESET);
+            LOGGER.log(Level.INFO,YELLOW+"Customer Deleted Successfully."+RESET);
         }}
 
     public static void gettemail() {
@@ -160,68 +145,45 @@ public class Customer {
             while ((line = reader.readLine()) != null) {
                 String[] arr = line.split(" , ");
                 if (arr[0].contains(idstatec)) {
-                    System.out.println(line);
+                    LOGGER.log(Level.INFO,line);
                     eemailt=arr[4];
-                    System.out.println(eemailt);
+                    LOGGER.log(Level.INFO,eemailt);
                     test();
                 }
-
             }
-
-
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
-
-
     }
-
-
-
-
     public static void getUserByname(Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
-            System.out.println("Please Enter Name Of Customer To Get Customer Data  :");
+            LOGGER.log(Level.INFO,"Please Enter Name Of Customer To Get Customer Data  :");
             String searchKey=input.next();
             String line;
             while ((line=reader.readLine())!=null){
                 if( line.contains(searchKey)){
-                    System.out.println(line);
-
+                    LOGGER.log(Level.INFO,line);
                 }
-
             }
-
-
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
-
-
     }
     public static void getAllcustomer(){
-
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             String line;
-            System.out.println("--------------------the list of customer--------------------");
-
+            LOGGER.log(Level.INFO,"--------------------the list of customer--------------------");
             while ((line=reader.readLine())!=null){
-                System.out.println(line);
+                LOGGER.log(Level.INFO,line);
+
             }
-            System.out.println("------------------------------------------------------------");
+            LOGGER.log(Level.INFO,"------------------------------------------------------------");
         }catch (Exception e){
-            e.printStackTrace();
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
-
-
-
-
-
     }
-
-
 }
 
 

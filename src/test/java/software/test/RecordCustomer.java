@@ -13,7 +13,7 @@ public class RecordCustomer {
     Customer customer1=new Customer();
     @Given("that I Choose the new customer registration option")
     public void that_i_choose_the_new_customer_registration_option() {
-        customer1.record("1","lemara","059821346","Tulkaarem","jsdfgjsdf");
+        customer1.recordcustomer("1","lemara","059821346","Tulkaarem","jsdfgjsdf");
     }
 
 

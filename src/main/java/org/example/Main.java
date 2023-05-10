@@ -2,28 +2,26 @@ package org.example;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.Scanner;
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 
 import static org.example.Product.compliteflag;
-//import com.concepts.email.GEmailSender;
-
 public class Main {
+    private static final Logger LOGGER=Logger.getLogger("org.example.Main");
     public static final String RESET = "\u001B[0m";
     public static final String PURPLE = "\u001B[35m";
     public static final String YELLOW = "\u001B[33m";
-    public static String filenamecustomer = "customerdata.txt";
-    public static String fileFinancial = "Financialdata.txt";
-    public static String filenameadmin = "Logindata.txt";
-    public static int count;
-    public static String id1,name1,phone1,address1,email1;
-    public static Scanner in=new Scanner(System.in);
-    public static String Username,Password;
+    static String fileFinancial = "Financialdata.txt";
+    static int count;
+    static Scanner in=new Scanner(System.in);
+    static String Username;
+    static String Password;
 
 
     public static void main(String[] args) throws IOException {
@@ -33,61 +31,14 @@ public class Main {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void readlogindata() {
 
         while (true){
         Scanner input1 = new Scanner(System.in);
-        System.out.print("Enter Username :   ");
+        LOGGER.log(Level.INFO,"Enter Username :   ");
         Username = input1.next();
         Scanner input2 = new Scanner(System.in);
-        System.out.print("Enter Password :   ");
+        LOGGER.log(Level.INFO,"Enter Password :   ");
         Password = input2.next();
         verify(Username,Password);
         }
@@ -95,19 +46,17 @@ public class Main {
 
     }
     public static void mainmenu(){
-        System.out.println("------------------------");
-        System.out.println("       <MENU>");
-        System.out.println("[1] Customer data .");
-        System.out.println("[2] Product data .");
-        System.out.println("[3] distribute order .");
-        System.out.println("[4] Sent email for complete product .");
-        System.out.println("[5] Financial Statistics .");
-        System.out.println("[6] Print invoice .");
-        System.out.println("[7] Logout .");
-        System.out.println("------------------------");
-        System.out.println("Enter your choice's number : ");
-
-
+        LOGGER.log(Level.INFO,"------------------------");
+        LOGGER.log(Level.INFO,"       <MENU>");
+        LOGGER.log(Level.INFO,"[1] Customer data .");
+        LOGGER.log(Level.INFO,"[2] Product data .");
+        LOGGER.log(Level.INFO,"[3] distribute order .");
+        LOGGER.log(Level.INFO,"[4] Sent email for complete product .");
+        LOGGER.log(Level.INFO,"[5] Financial Statistics .");
+        LOGGER.log(Level.INFO,"[6] Print invoice .");
+        LOGGER.log(Level.INFO,"[7] Logout .");
+        LOGGER.log(Level.INFO,"------------------------");
+        LOGGER.log(Level.INFO,"Enter your choice's number : ");
     }
     public static void mainchoice(int s) throws IOException {
 
@@ -115,11 +64,7 @@ public class Main {
             customermenu();
         }
         else if (s==2){
-            try {
-                productmenu();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            productmenu();
         }
         else if (s==3){
             Product p=new Product();
@@ -248,7 +193,7 @@ public class Main {
                 }
             }}
             catch (Exception e){
-                System.out.println(e);
+                LOGGER.log(Level.INFO,String.valueOf(e));
             }
 
 
