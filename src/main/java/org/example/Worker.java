@@ -58,7 +58,7 @@ public class Worker {
     }
 
     public static void setStatues(String statues) {
-        statues = statues;
+        Worker.statues = statues;
     }
     private List<Product> orders = new ArrayList<Product>();
 
@@ -82,6 +82,11 @@ public class Worker {
 
     public void writeWorker(int id, String name, String phone, String statues, String productname) {
         try {
+             id=id;
+            name=name;
+            phone=phone;
+            statues=statues;
+            productname=productname;
             FileWriter writer = new FileWriter(WORKWRFILE, true);
             writer.append(Worker.getUserData());
             writer.append("\n");
