@@ -2,21 +2,16 @@ package org.example;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 import static org.example.Main.*;
 
 public class Customer {
     static String filenamecustomer = "customerdata.txt";
-    static Scanner input = new Scanner(System.in).useDelimiter("\n");
 
 
-    public static String getIdc() {
-        return idc;
-    }
 
-    public static void setIdc(String idc) {
-        Customer.idc = idc;
-    }
+
 
      static String idc;
      static String namec;
@@ -27,64 +22,23 @@ public class Customer {
     static String eemailt;
 
 
-    public static String getEmailc() {
-        return emailc;
-    }
-
-    public static void setEmailc(String emailc) {
-        Customer.emailc = emailc;
-    }
 
 
-
-
-
-    public static String getNamec() {
-        return namec;
-    }
-
-    public static void setNamec(String namec) {
-        Customer.namec = namec;
-    }
-
-    public static String getPhonec() {
-        return phonec;
-    }
-
-    public static void setPhonec(String phonec) {
-        Customer.phonec = phonec;
-    }
-
-    public static String getAddressc() {
-        return addressc;
-    }
-
-    public static void setAddressc(String addressc) {
-        Customer.addressc = addressc;
-    }
-
-    public Customer(String idc,String namec, String phonec, String addressc,String emailc){
-        this.idc=idc;
-        this.namec=namec;
-        this.phonec=phonec;
-        this.addressc=addressc;
-        this.emailc=emailc;
+    public Customer(String id,String name, String phone, String address,String email){
+        this.idc=id;
+        this.namec=name;
+        this.phonec=phone;
+        this.addressc=address;
+        this.emailc=email;
     }
     public  String getUserData(){
         return  idc+" , "+ namec+" , " + phonec +" , " +addressc+" , " +emailc;
-    }
-    public void read_customer_data(){
-        readfromuser();
-        idc=id1;
-        namec=name1;
-        phonec=phone1;
-        addressc=address1;
-        emailc=email1;
     }
 
     public void readfromuser(){
 
         Scanner input = new Scanner(System.in).useDelimiter("\n");
+
         System.out.print("Customer's Id :  ");
         id1= input.nextLine();
         System.out.print("Enter Customer's Name :  ");
@@ -114,7 +68,8 @@ public class Customer {
 
 
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
+
         }
     }
 
@@ -143,7 +98,7 @@ public class Customer {
 
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         try {
@@ -154,7 +109,7 @@ public class Customer {
             }
             writer.close();
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
@@ -167,11 +122,9 @@ public class Customer {
             String searchKey=input.next();
             String line;
             while ((line=reader.readLine())!=null) {
-                String[] arr = line.split(",");
+                String[] arr = line.split(" , ");
                 if (arr[0].contains(searchKey)) {
-
                     System.out.println(line);
-                    continue;
                 }else {
                     arrayList.add(line);
 
@@ -179,11 +132,13 @@ public class Customer {
             }
 
         }catch (Exception e){
+            e.printStackTrace();
 
         }
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
-            for (int i=0;i<arrayList.size();i++){
+
+          for (int i=0;i<arrayList.size();i++){
                 writer.append( arrayList.get(i));
                 writer.append("\n");
 
@@ -192,7 +147,7 @@ public class Customer {
             writer.close();
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }finally {
             System.out.println(YELLOW+"Customer Deleted Successfully."+RESET);
         }}
@@ -209,14 +164,13 @@ public class Customer {
                     eemailt=arr[4];
                     System.out.println(eemailt);
                     test();
-                    continue;
                 }
 
             }
 
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
 
@@ -241,7 +195,7 @@ public class Customer {
 
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
 
@@ -258,7 +212,7 @@ public class Customer {
             }
             System.out.println("------------------------------------------------------------");
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
 
