@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 import static org.example.Worker.workerfile;
 
 public class Product {
+    //jana barakeh
     public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private Logger logger = Logger.getLogger("org.example.Product");
