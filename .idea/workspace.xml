@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update customer lemara 11 from jana's git">
-      <change beforePath="$PROJECT_DIR$/features/distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/distributeorder.feature" afterDir="false" />
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="test update product jana 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customerdata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,19 +85,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/nemal/Downloads/NetworkProject/net",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nemal/Downloads/NetworkProject/net&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -365,49 +368,28 @@
       <option name="project" value="LOCAL" />
       <updated>1683705701164</updated>
     </task>
-    <task id="LOCAL-00022" summary="update customer lemara 7">
-      <created>1683706875811</created>
+    <task id="LOCAL-00022" summary="update product jana 1">
+      <created>1683710798462</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1683706875811</updated>
+      <updated>1683710798462</updated>
     </task>
-    <task id="LOCAL-00023" summary="update customer lemara 8">
-      <created>1683707117827</created>
+    <task id="LOCAL-00023" summary="test update product jana 1">
+      <created>1683711152621</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1683707117827</updated>
+      <updated>1683711152621</updated>
     </task>
-    <task id="LOCAL-00024" summary="update customer lemara 10">
-      <created>1683714120527</created>
+    <task id="LOCAL-00024" summary="test update product jana 2">
+      <created>1683711378185</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1683714120527</updated>
+      <updated>1683711378185</updated>
     </task>
-    <task id="LOCAL-00025" summary="update customer lemara 10">
-      <created>1683714145910</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1683714145910</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update customer lemara 10">
-      <created>1683714228300</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1683714228300</updated>
-    </task>
-    <task id="LOCAL-00027" summary="update customer lemara 11 from jana's git">
-      <created>1683714389299</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1683714389299</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,12 +432,10 @@
     <MESSAGE value="update customer 4" />
     <MESSAGE value="update customer 5" />
     <MESSAGE value="update customer 6" />
-    <MESSAGE value="update customer lemara 7" />
-    <MESSAGE value="update customer lemara 8" />
-    <MESSAGE value="update customer lemara 9" />
-    <MESSAGE value="update customer lemara 10" />
-    <MESSAGE value="update customer lemara 11 from jana's git" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 11 from jana's git" />
+    <MESSAGE value="update product jana 1" />
+    <MESSAGE value="test update product jana 1" />
+    <MESSAGE value="test update product jana 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test update product jana 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -468,13 +448,13 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>io.cucumber.core.cli.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Scenario__product_recorded_successfully.ic" NAME="Scenario: product recorded successfully Coverage Results" MODIFIED="1682589302868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordCustomer.ic" NAME="Feature: recordCustomer Coverage Results" MODIFIED="1682589388091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
   </component>

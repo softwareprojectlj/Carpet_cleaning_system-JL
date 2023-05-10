@@ -9,17 +9,20 @@ import static org.example.Main.*;
 import static org.example.Worker.workerfile;
 
 public class Product {
-    public static String productfile = "product.txt";
+    public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
-    public static int idp, idcus ,idprodis;
-    public static String name,idtest;
-    public static String height;
-    public static String width;
-    public static String dayfinish;
-    public static String statusP;
-    public static int price;
-    public static String state;
-    public static int priceyes , priceno;
+     private static int idp;
+     private static int idcus ;
+     private static int idprodis ;
+    private static String name;
+    static String idtest;
+     static String height = " ";
+    private static String width;
+    private static String dayfinish;
+    private static int price;
+    private static String state;
+    private static int priceyes ;
+    private static int priceno;
 
     public static String getPrizstate() {
         return prizstate;
