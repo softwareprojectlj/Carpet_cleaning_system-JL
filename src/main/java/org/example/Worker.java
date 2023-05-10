@@ -5,17 +5,20 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Worker {
 
-    public static String workerfile = "Worker.txt";
+    public static final  String WORKWRFILE = "Worker.txt";
     Scanner input = new Scanner(System.in).useDelimiter("\n");
-    public static int id;
-    public static String name;
-    public static String phone;
-  //  public static String address;
-    public static String Statues;
-    public static String productname;
+    private static Logger logger = Logger.getLogger("org.example.Worker");
+    private static int id;
+    private static String name;
+    private static String phone;
+
+    private static String statues;
+    private static String productname;
 
     public Worker() {
     }
@@ -53,54 +56,41 @@ public class Worker {
     }
 
     public static String getStatues() {
-        return Statues;
+        return statues;
     }
 
     public static void setStatues(String statues) {
-        Statues = statues;
+        statues = statues;
     }
     private List<Product> orders = new ArrayList<Product>();
 
-    public Worker(int idW, String nameW, String phoneW, String StatuesW, String productNameW) {
-        this.id = idW;
-        this.name = nameW;
-        this.phone = phoneW;
-    //    this.address = addressW;
-        this.Statues = StatuesW;
-        this.productname = productNameW;
-    }
-
     public static String getUserData() {
-        return id + " , " + name + " , " + phone + " , " + Statues + " , " + productname;
+        return id + " , " + name + " , " + phone + " , " + statues + " , " + productname;
     }
 
     public void readfromuser() {
-        System.out.println("Add The worker:");
-        System.out.print("Worker Id :  ");
+        logger.log(Level.INFO,"Add The worker:");
+        logger.log(Level.INFO,"Worker Id :  ");
         int idW = Integer.parseInt(input.nextLine());
-        System.out.println("the name of the worker:");
+        logger.log(Level.INFO,"the name of the worker:");
         String nameW = input.nextLine();
-        System.out.println("the Phone of the worker:");
+        logger.log(Level.INFO,"the Phone of the worker:");
         String phoneW = input.nextLine();
-       /* System.out.println("the address of the worker:");
-        String adressW = input.nextLine();*/
-        System.out.println("the Statues:");
+        logger.log(Level.INFO,"the Statues:");
         String statuesW = input.nextLine();
         String productNameW = "null";
         writeWorker(idW, nameW, phoneW, statuesW, productNameW);
     }
 
-    public void writeWorker(int id, String name, String Phone, String statues, String productname) {
-        Worker W = new Worker(id, name, Phone, statues, productname);
-
+    public void writeWorker(int id, String name, String phone, String statues, String productname) {
         try {
-            FileWriter writer = new FileWriter(workerfile, true);
+            FileWriter writer = new FileWriter(WORKWRFILE, true);
             writer.append(Worker.getUserData());
             writer.append("\n");
             writer.close();
-            System.out.println("Worker added successfully!");
+            logger.log(Level.INFO,"Worker added successfully!");
         } catch (IOException e) {
-            System.out.println(e);
+           e.printStackTrace();
         }
     }
 
