@@ -302,7 +302,7 @@ public class Product {
                 if (arr[6].contains(stateflag)) {
                     logger.log(Level.INFO,line);
                     idtest=arr[7];
-                    Customer.gettemail();
+                    customer.gettemail();
                 }
             }
         } catch (Exception e) {
