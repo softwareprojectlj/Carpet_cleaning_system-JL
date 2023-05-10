@@ -27,12 +27,12 @@ public class Product {
     private  String prizstate;
     private  int custmorID;
 
-    public Product(int id, String namep, String Hp, String Wp, String Dp, int p, String s, int idcu, String pstate) {
+    public Product(int id, String namep, String hP, String wP, String dP, int p, String s, int idcu, String pstate) {
         productID = id;
         productNAME = namep;
-        productHEIGHT = Hp;
-        productWIDTH = Wp;
-        prodcutDFINISH = Dp;
+        productHEIGHT = hP;
+        productWIDTH = wP;
+        prodcutDFINISH = dP;
         productPRICE = p;
         productSTATE = s;
        custmorID = idcu;
