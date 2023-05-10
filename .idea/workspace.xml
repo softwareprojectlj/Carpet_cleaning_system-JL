@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update  product jana hotspots" />
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product removestatic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,13 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00017" summary="update customer 2">
-      <created>1683624242180</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1683624242180</updated>
     </task>
     <task id="LOCAL-00018" summary="update customer 3">
       <created>1683634339484</created>
@@ -558,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683742775793</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="update product removestatic">
+      <created>1683748744246</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1683748744247</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update customer lemara 25 يا رب ما انجلط main+customer edit" />
     <MESSAGE value="update customer lemara 30 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
     <MESSAGE value="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
     <MESSAGE value="update main lemara 1" />
@@ -610,7 +609,8 @@
     <MESSAGE value="update  invoice jana 2222" />
     <MESSAGE value="update  invoice jana 3333" />
     <MESSAGE value="update  product jana hotspots" />
-    <option name="LAST_COMMIT_MESSAGE" value="update  product jana hotspots" />
+    <MESSAGE value="update product removestatic" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product removestatic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
