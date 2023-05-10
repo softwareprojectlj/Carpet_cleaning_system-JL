@@ -14,11 +14,11 @@ public class Product {
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Product");
      private  int PRODUCTid;
-     private   int custmorID ;
+     private   int CUSTOMERID ;
      private   int idprodis ;
     private   String PRODUCTname;
     static String idtest;
-     static String PRODUCTheight ;
+    private String PRODUCTheight ;
     private   String PRODUCTwidth;
     private   String PRODUCTdayfinish;
     private  int PRODUCTprice;
@@ -123,14 +123,12 @@ public class Product {
     }
 
     public void Deleteproduct(ArrayList<String> arrayList) {
-        String filePath = "product.txt";
         try {
-            File inputFile = new File(filePath);
+            File inputFile = new File(PRODUCTFILE);
             File tempFile = new File("temp.txt");
 
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-            BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
-            String Delete[] = null;
+            String [] Delete = null;
 
             logger.log(Level.INFO,"-----Delete Product------\n");
             logger.log(Level.INFO,"enter the ID of the product: ");
@@ -148,6 +146,7 @@ public class Product {
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
         try {
             FileWriter writer = new FileWriter(PRODUCTFILE);
@@ -167,7 +166,7 @@ public class Product {
 
     public static void updateproduct(ArrayList<String> arrayList) throws IOException {
         try {
-            String update[] = null;
+            String [] update = null;
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             logger.log(Level.INFO,"-----Update Product------\n");
             logger.log(Level.INFO,"enter the ID of the product:");
@@ -312,12 +311,11 @@ public class Product {
     }
 
     public void Distribute(ArrayList<String> workerarray) throws IOException {
-            String distributeP[] = null;
-            String distributeW[] = null;
+            String[] distributeP = null;
+            String[] distributeW= null;
         logger.log(Level.INFO,"\tenter the ID of the product:\t ");
             int idproduct =Integer.parseInt(input.nextLine());
             idprodis=idproduct;
-            String output = null;
                  String information ;
                 StringBuilder sb = new StringBuilder();
                 BufferedReader reader = new BufferedReader(new FileReader(WORKWRFILE));
@@ -368,7 +366,7 @@ public class Product {
         try {
             FileReader fr=new FileReader(PRODUCTFILE);
             BufferedReader br =new BufferedReader(fr);
-            String updatestate[] = null;
+            String[] updatestate = null;
            String line;
            while((line= br.readLine())!= null)
            {
@@ -385,12 +383,7 @@ public class Product {
                    productpp.add(line);}
            }
         } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        try{
-
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         try{
             FileWriter writer=new FileWriter(PRODUCTFILE);
@@ -400,13 +393,13 @@ public class Product {
             }
             writer.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+          e.printStackTrace();
         }
     }
     public Integer getprice(String w,String h)
     {
-        this.PRODUCTwidth=w;
-        this.PRODUCTheight=h;
+        PRODUCTwidth=w;
+        PRODUCTheight=h;
         Double area=(Double.valueOf(w) * Double.valueOf(h));
         if(area<=5 && area>0 )
             price=40;
@@ -464,7 +457,7 @@ public class Product {
             }
             bufferedInputStream.close();
             fileInputStream.close();
-            logger.log(Level.INFO,stringBuilder.toString());
+            logger.log(Level.INFO, String.valueOf(stringBuilder));
         }catch (IOException e) {
             e.printStackTrace();
         }
