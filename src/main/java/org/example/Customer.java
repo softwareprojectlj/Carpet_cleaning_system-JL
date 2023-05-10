@@ -11,12 +11,12 @@ public class Customer {
     private static final Logger LOGGER=Logger.getLogger("org.example.Customer");
     static String filenamecustomer = "customerdata.txt";
 
-     static String customerId;
-     static String customerName;
-     static String customerPhone;
+     private String customerId;
+     private String customerName;
+     private String customerPhone;
 
-     static String customerAddress;
-     static String customerEmail;
+     private String customerAddress;
+     private String customerEmail;
 
     static String eemailt;
 
