@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update product jana 3">
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update product jana 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,6 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -61,7 +59,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="d5aca7bb-d94b-46a8-93af-1c4b4ec17e6d" />
-        <option name="url" value="https://github.com/lemarafuad/Carpet_cleaning_system-JL.git" />
+        <option name="url" value="https://github.com/softwareprojectlj/Carpet_cleaning_system-JL.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -395,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683712642341</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update product jana 4">
+      <created>1683714925722</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714925722</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update product jana 4">
+      <created>1683715206160</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1683715206160</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +454,8 @@
     <MESSAGE value="test update product jana 1" />
     <MESSAGE value="test update product jana 2" />
     <MESSAGE value="update product jana 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="update product jana 3" />
+    <MESSAGE value="update product jana 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product jana 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

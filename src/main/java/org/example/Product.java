@@ -13,7 +13,7 @@ public class Product {
     //jana barakeh
     public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
-    private Logger logger = Logger.getLogger("org.example.Product");
+    private static Logger logger = Logger.getLogger("org.example.Product");
      private static int idp;
      private static int idcus ;
      private static int idprodis ;
@@ -122,7 +122,7 @@ public class Product {
 
     public void readfromuserp() {
       logger.log(Level.INFO,"Add your product:");
-        System.out.print("product Id :  ");
+        logger.log(Level.INFO,"product Id :  ");
         int idr = Integer.parseInt(input.nextLine());
         logger.log(Level.INFO,"the name of the product:");
         String namer = input.nextLine();
@@ -154,25 +154,24 @@ public class Product {
             writer.append(p.getUserData());
             writer.append("\n");
             writer.close();
-            System.out.println("product added successfully!");
-            System.out.println("the statue of product : \t Waiting");
+            logger.log(Level.INFO,"product added successfully!");
+            logger.log(Level.INFO,"the statue of product : \t Waiting");
         } catch (IOException e) {
-            System.out.println(e);
+           e.printStackTrace();
         }
     }
 
     public static void deleteRecordproById(ArrayList<String> arrayList, Scanner input) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(productfile));
-            System.out.println("Enter An Id To Delete A Product : ");
+            logger.log(Level.INFO,"Enter An Id To Delete A Product : ");
             String searchKey = input.next();
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] arr = line.split(" , ");
                 if (arr[0].contains(searchKey)) {
 
-                    System.out.println(line);
-                    continue;
+                    logger.log(Level.INFO,line);
                 } else {
                     arrayList.add(line);
 
@@ -193,9 +192,9 @@ public class Product {
             writer.close();
 
         } catch (Exception e) {
-            System.out.println(e);
+           e.printStackTrace();
         } finally {
-            System.out.println(YELLOW + "Product Deleted Successfully." + RESET);
+            logger.log(Level.INFO,YELLOW + "Product Deleted Successfully." + RESET);
         }
     }
 
@@ -209,8 +208,8 @@ public class Product {
             BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
             String Delete[] = null;
 
-            System.out.println("-----Delete Product------\n");
-            System.out.println("enter the ID of the product: ");
+            logger.log(Level.INFO,"-----Delete Product------\n");
+            logger.log(Level.INFO,"enter the ID of the product: ");
             int id = input.nextInt();
             String line;
             StringBuilder sb = new StringBuilder();
@@ -219,8 +218,7 @@ public class Product {
 
                 Delete = line.split(" , ");
                 if ((Delete[0].equalsIgnoreCase(String.valueOf(id)))) {
-                    System.out.println(line);
-                    continue;
+                    logger.log(Level.INFO,line);
                 } else {
                     arrayList.add(line);
                 }
@@ -236,9 +234,9 @@ public class Product {
             writer.close();
 
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         } finally {
-            System.out.println("done!");
+            logger.log(Level.INFO,"done!");
         }
     }
 
@@ -247,8 +245,8 @@ public class Product {
         try {
             String update[] = null;
             BufferedReader reader = new BufferedReader(new FileReader(productfile));
-            System.out.println("-----Update Product------\n");
-            System.out.println("enter the ID of the product:");
+            logger.log(Level.INFO,"-----Update Product------\n");
+            logger.log(Level.INFO,"enter the ID of the product:");
             int id = input.nextInt();
             String line;
             StringBuilder sb = new StringBuilder();
@@ -258,12 +256,12 @@ public class Product {
                 update = line.split(" , ");
                 if (update[0].equalsIgnoreCase(String.valueOf(id))) {
                     BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
-                    System.out.print("Enter the data you want to update : ");
+                    logger.log(Level.INFO,"Enter the data you want to update : ");
                     String olddata = consoleReader.readLine();
-                    System.out.print("Enter the new data : ");
+                    logger.log(Level.INFO,"Enter the new data : ");
                     String newdata = consoleReader.readLine();
                     arrayList.add(line.replace(olddata, newdata));
-                    System.out.println("File Update Successfully.");
+                    logger.log(Level.INFO,"File Update Successfully.");
                 } else {
 
                     arrayList.add(line);
@@ -280,13 +278,13 @@ public class Product {
             }
             writer.close();
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
     public static void Findproduct() throws IOException {
-        System.out.println("-----Find Product------\n");
-        System.out.println("enter the Name of the product: ");
+        logger.log(Level.INFO,"-----Find Product------\n");
+        logger.log(Level.INFO,"enter the Name of the product: ");
         String Namefind = input.nextLine();
         String[] FindP = null;
         String output = null;
@@ -300,13 +298,12 @@ public class Product {
                 if (FindP[1].equalsIgnoreCase(Namefind)) {
                     String information = "Product id :\t" + FindP[0] + "    Product Name :\t" + FindP[1] + "     Product Heigh:\t" + FindP[2] + "    Product Width :\t" + FindP[3] + "     delivery date :\t" + FindP[4];
                     output = information;
-                    //        fin.close();
                     break;
                 } else {
                     output = "Not found";
                 }
             }
-            System.out.println(output);
+            logger.log(Level.INFO,output);
             break;
         }
 
@@ -324,23 +321,14 @@ public class Product {
             while ((line = reader.readLine()) != null) {
                 String[] arr = line.split(" , ");
                 if (arr[8].contains(sprizeflag)) {
-                   // System.out.println(line);
                     String p = arr[5];
                     countyes(Integer.parseInt(p));
-                    //System.out.println(price1);
-                    continue;
                 }
-
-
             }
-
-
         } catch (Exception e) {
-            System.out.println("lmlm");
-            System.out.println(e);
+            logger.log(Level.INFO,"lmlm");
+            e.printStackTrace();
         }
-
-
     }
     public static void countno(int r){
 
@@ -355,23 +343,14 @@ public class Product {
             while ((line = reader.readLine()) != null) {
                 String[] arr = line.split(" , ");
                 if (arr[8].contains(sprizeflag)) {
-                    //System.out.println(line);
                     String p = arr[5];
                     countno(Integer.parseInt(p));
-                    //System.out.println(price1);
-                    continue;
                 }
-
-
             }
-
-
         } catch (Exception e) {
-            System.out.println("lmlm");
-            System.out.println(e);
+            logger.log(Level.INFO,"lmlm");
+            e.printStackTrace();
         }
-
-
     }
 
     public static void writef(){
@@ -384,9 +363,9 @@ public class Product {
                 writer.write("total cash :" + priceyes +"\n"+
                         "total paid :" + priceyes +"\n");
                 writer.close();
-                System.out.println("open the Financial file to show the state of money ^_^ ");
+                logger.log(Level.INFO,"open the Financial file to show the state of money ^_^ ");
             } catch (IOException e) {
-                System.out.println(e);
+                e.printStackTrace();
             }
         }
 
@@ -398,27 +377,20 @@ public class Product {
             while ((line = reader.readLine()) != null) {
                 String[] arr = line.split(" , ");
                 if (arr[6].contains(stateflag)) {
-                    System.out.println(line);
+                    logger.log(Level.INFO,line);
                     idtest=arr[7];
                     Customer.gettemail();
-
-                    continue;
                 }
-
             }
-
-
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
-
-
     }
 
     public void Distribute(ArrayList<String> workerarray) throws IOException {
             String distributeP[] = null;
             String distributeW[] = null;
-            System.out.println("\tenter the ID of the product:\t ");
+        logger.log(Level.INFO,"\tenter the ID of the product:\t ");
             int idproduct =Integer.parseInt(input.nextLine());
             idprodis=idproduct;
             String output = null;
@@ -433,7 +405,7 @@ public class Product {
 
                     distributeP = Line.split(" , ");
                     if (distributeP[0].equalsIgnoreCase(String.valueOf(idproduct))) {
-                        System.out.println("\tenter the ID of the Worker:\t ");
+                        logger.log(Level.INFO,"\tenter the ID of the Worker:\t ");
                         int idworker = Integer.parseInt(input.nextLine());
                         while ((line2 = reader.readLine()) != null) {
                             sb.append(line2).append("\n");
@@ -447,15 +419,13 @@ public class Product {
                                 String newLine = String.join(" , ", parts);
                                 workerarray.add(newLine);
                                 information = "Product id :\t" + distributeP[0] + "    Product Name :\t" + distributeP[1] + "     delivery date :\t" + distributeP[5] + "\n" + "   Worker name :\t" + distributeW[1] + "   Worker Phone :\t" + distributeW[2];
-                                System.out.println(information);
-                                System.out.println("the statue of product : \t in treatment");
+                                logger.log(Level.INFO,information);
+                                logger.log(Level.INFO,"the statue of product : \t in treatment");
                             } else {
                                 workerarray.add(line2);
                             }
                         }
-                    } /*else {
-                    output = "Not found\n all the workers are Not Available Now >-< \n the statue of product : \t waiting ";
-                }*/
+                    }
                 }
                        try {
                     FileWriter writer = new FileWriter(workerfile);
@@ -465,7 +435,7 @@ public class Product {
                     }
                     writer.close();
                 } catch (Exception e) {
-                    System.out.println(e);
+                    e.printStackTrace();
                 }
             }
 
@@ -547,14 +517,14 @@ public class Product {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(productfile));
             String line;
-            System.out.println("--------------------the list of product--------------------");
+            logger.log(Level.INFO,"--------------------the list of product--------------------");
 
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
+                logger.log(Level.INFO,line);
             }
-            System.out.println("------------------------------------------------------------");
+            logger.log(Level.INFO,"------------------------------------------------------------");
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
@@ -568,10 +538,9 @@ public class Product {
             while ((bytesRead = bufferedInputStream.read(buffer)) != -1) {
                 stringBuilder.append(new String(buffer, 0, bytesRead));
             }
-            // Close the streams
             bufferedInputStream.close();
             fileInputStream.close();
-            System.out.println(stringBuilder.toString());
+            logger.log(Level.INFO,stringBuilder.toString());
         }catch (IOException e) {
             e.printStackTrace();
         }
