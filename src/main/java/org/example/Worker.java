@@ -82,11 +82,6 @@ public class Worker {
 
     public void writeWorker(int id, String name, String phone, String statues, String productname) {
         try {
-             id=id;
-           this. name=name;
-           this. phone=phone;
-           this. statues=statues;
-          this.  productname=productname;
             FileWriter writer = new FileWriter(WORKWRFILE, true);
             writer.append(Worker.getUserData());
             writer.append("\n");
