@@ -19,9 +19,9 @@ public class Product {
     private   String PRODUCTname;
     static String idtest;
      static String PRODUCTheight ;
-    private  static String PRODUCTwidth;
-    private  static String PRODUCTdayfinish;
-    private  static int PRODUCTprice;
+    private   String PRODUCTwidth;
+    private   String PRODUCTdayfinish;
+    private  int PRODUCTprice;
     private  String PRODUCTstate;
     private static int priceyes ;
     private static int priceno;
