@@ -23,6 +23,8 @@ public class Main {
     static Scanner in=new Scanner(System.in);
     static String Username;
     static String Password;
+   static Customer customer = new Customer();
+   static Product product = new Product();
 
 
     public static void main(String[] args) {readlogindata();}
@@ -86,7 +88,6 @@ public class Main {
             LOGGER.log(Level.INFO,"[5] Back .");
             LOGGER.log(Level.INFO,entrymsg);
             int x = in.nextInt();
-            Customer customer = new Customer();
             ArrayList<String> arrayList = new ArrayList<String>();
             if (x == 1) {
                 customer.getAllcustomer();
@@ -116,7 +117,6 @@ public class Main {
             LOGGER.log(Level.INFO,"[5] Back .");
             LOGGER.log(Level.INFO,entrymsg);
             int y = in.nextInt();
-            Product product = new Product();
             ArrayList<String> arrayListP = new ArrayList<String>();
             if (y == 1) {
                 product.readfromuserp();
