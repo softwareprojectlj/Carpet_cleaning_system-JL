@@ -1,6 +1,6 @@
 package org.example;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -67,7 +67,7 @@ public class Customer {
 
 
 
-    public static void updateRecord1(ArrayList<String> arrayList, Scanner input){
+    public static void updateRecord1(List<String> arrayList, Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             LOGGER.log(Level.INFO,"please enter any key to update the record");
@@ -91,8 +91,8 @@ public class Customer {
         }
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
-            for(int i=0;i<arrayList.size();i++){
-                writer.append(arrayList.get(i));
+            for(var item : arrayList){
+                writer.append(item);
                 writer.append("\n");
             }
             writer.close();
@@ -103,7 +103,7 @@ public class Customer {
     }
 
 
-    public static void  deleteRecordById(ArrayList<String> arrayList,Scanner input){
+    public static void  deleteRecordById(List<String> arrayList,Scanner input){
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             LOGGER.log(Level.INFO,"Enter An Id To Delete A Customer : ");
@@ -125,11 +125,11 @@ public class Customer {
         }
         try {
             FileWriter writer=new FileWriter(filenamecustomer);
-
-          for (int i=0;i<arrayList.size();i++){
-                writer.append( arrayList.get(i));
+            for(var item : arrayList){
+                writer.append(item);
                 writer.append("\n");
             }
+
             writer.close();
 
         }catch (Exception e){
