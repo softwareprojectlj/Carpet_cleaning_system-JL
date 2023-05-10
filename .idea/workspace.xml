@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update customer lemara 30 والاخير ان شاء الله بملف الكستمر عشان ما انجلط">
-      <change beforePath="$PROJECT_DIR$/customerdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customerdata.txt" afterDir="false" />
-    </list>
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -505,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683723713207</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط">
+      <created>1683724009718</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1683724009718</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update small bug2" />
     <MESSAGE value="update customer 1" />
     <MESSAGE value="update customer 2" />
     <MESSAGE value="update customer 3" />
@@ -557,7 +561,8 @@
     <MESSAGE value="update customer lemara 24 main+customer edit" />
     <MESSAGE value="update customer lemara 25 يا رب ما انجلط main+customer edit" />
     <MESSAGE value="update customer lemara 30 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
-    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 30 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
+    <MESSAGE value="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
+    <option name="LAST_COMMIT_MESSAGE" value="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

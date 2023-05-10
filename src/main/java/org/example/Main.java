@@ -2,28 +2,20 @@ package org.example;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.Scanner;
-
 import static org.example.Product.compliteflag;
-//import com.concepts.email.GEmailSender;
-
 public class Main {
     public static final String RESET = "\u001B[0m";
     public static final String PURPLE = "\u001B[35m";
     public static final String YELLOW = "\u001B[33m";
-    public static String filenamecustomer = "customerdata.txt";
     public static String fileFinancial = "Financialdata.txt";
-    public static String filenameadmin = "Logindata.txt";
     public static int count;
-
     public static Scanner in=new Scanner(System.in);
-    public static String Username,Password;
+    static String Username,Password;
 
 
     public static void main(String[] args) throws IOException {
