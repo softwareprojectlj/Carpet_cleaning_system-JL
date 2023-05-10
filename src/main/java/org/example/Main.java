@@ -135,7 +135,7 @@ public class Main {
 
         }
         else if (s==6){
-            invoiceCC I=new invoiceCC();
+            INVOICECC I=new INVOICECC();
             I.readfromuser();
         }
         else if (s==7){
