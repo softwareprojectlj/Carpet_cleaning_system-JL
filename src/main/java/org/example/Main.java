@@ -79,7 +79,6 @@ public class Main {
         }}
     public static void customermenu(){
         while (true) {
-            LOGGER.log(Level.INFO,"-------------------------");
             LOGGER.log(Level.INFO,"     <Customer MENU>     ");
             LOGGER.log(Level.INFO,"[1] Add Customer .");
             LOGGER.log(Level.INFO,"[2] Update Customer .");
@@ -87,7 +86,7 @@ public class Main {
             LOGGER.log(Level.INFO,"[4] List The Customer By Name .");
             LOGGER.log(Level.INFO,"[5] Back .");
             LOGGER.log(Level.INFO,"-------------------------");
-            LOGGER.log(Level.INFO,"Enter your choice's number : ");
+            LOGGER.log(Level.INFO,"Enter your choice number : ");
             int x = in.nextInt();
             Customer customer = new Customer();
             ArrayList<String> arrayList = new ArrayList<String>();
@@ -150,8 +149,8 @@ public class Main {
             while ((line=reader.readLine())!=null){
                 data = line.split(d);
                 if(data[0].equals(nameuser)&& data[1].equals(pass)) {
-                    System.out.println("------------------------");
-                    System.out.println(PURPLE
+                    LOGGER.log(Level.INFO,"-------------------------");
+                    LOGGER.log(Level.INFO,PURPLE
                             + "   Welcome Mis " + nameuser
                             + RESET);
                     while (true){
@@ -162,9 +161,8 @@ public class Main {
                 }
                 else
                 {
-                    System.out.println("the pass or username is wrong ,try to log in again !");
+                    LOGGER.log(Level.INFO,"the pass or username is wrong ,try to log in again !");
                    return;
-
                 }
             }}
             catch (Exception e){
@@ -174,12 +172,13 @@ public class Main {
 
         }
 
-public static   void test(){
+public static   void test() {
 
     final String user = "";
     final String password = "";
-    String to = Customer.eemailt;;
-    String to1="    ";
+    String to = Customer.eemailt;
+    ;
+    String to1 = "    ";
 
     Properties props = new Properties();
     props.put("mail.smtp.auth", "true");
@@ -189,8 +188,8 @@ public static   void test(){
     Session session = Session.getDefaultInstance(props,
             new javax.mail.Authenticator() {
                 @Override
-                protected javax.mail.PasswordAuthentication getPasswordAuthentication(){
-                    return new javax.mail.PasswordAuthentication(user,password);
+                protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
+                    return new javax.mail.PasswordAuthentication(user, password);
                 }
 
             });
@@ -199,54 +198,15 @@ public static   void test(){
         message1.setFrom(new InternetAddress(user));
         message1.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
         message1.setSubject("Cleaning Serves for carpets and covers !");
-        message1.setText("The order is ready, please come to collect it"+"");
+        message1.setText("The order is ready, please come to collect it" + "");
         Transport.send(message1);
-        System.out.println("email sent successfully!");
+        LOGGER.log(Level.INFO, "email sent successfully!");
     } catch (Exception ignored) {
-        //ignored
-        System.out.println("No");
+        LOGGER.log(Level.INFO, "Theres Problem in Email!");
     }
-}
+}}
 
 
 
 
 
-
-    //create file code   لما احتاجهه خليه احتياط + بعد فيه عدد أسطر الفايل
-    public static void createNewFileWithHeaders() {
-        File database = new File(fileFinancial);
-
-        try {
-
-            if (database.createNewFile() == true) {
-
-                try {
-                    FileWriter writer = new FileWriter(fileFinancial, true);
-                    //writer.append("Customers name" + "," + "Customers phone" + "," + "Customers address"+ "," + "Customers address" );
-                   // writer.append("\n");
-                    writer.close();
-                    System.out.println("file created succefully!");
-                } catch (IOException e) {
-                    System.out.println(e);
-                }
-
-            } else {
-                Scanner sc = new Scanner(database);
-                while(sc.hasNextLine()) {
-                    sc.nextLine();
-                    count++;
-                }
-             //   System.out.println(count);
-
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
-
-}
