@@ -1,6 +1,7 @@
 package org.example;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import static org.example.Main.*;
 import java.util.logging.Level;
@@ -84,7 +85,7 @@ public class Product {
         }
     }
 
-    public  void deleteRecordproById(ArrayList<String> arrayList, Scanner input) {
+    public  void deleteRecordproById(List<String> arrayList, Scanner input) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             logger.log(Level.INFO,"Enter An Id To Delete A Product : ");
@@ -120,7 +121,7 @@ public class Product {
     }
 
 
-    public  void updateproduct(ArrayList<String> arrayList) {
+    public  void updateproduct(List<String> arrayList) {
         try {
             String [] update;
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
@@ -256,7 +257,7 @@ public class Product {
         }
     }
 
-    public void Distribute(ArrayList<String> workerarray) throws IOException {
+    public void Distribute(List<String> workerarray) throws IOException {
         String[] distributeP;
         String[] distributeW;
         logger.log(Level.INFO,"\tenter the ID of the product:\t ");
@@ -392,6 +393,7 @@ public class Product {
     }
     public void listofworker() {
         try {
+
             FileInputStream fileInputStream = new FileInputStream("Worker.txt");
             BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
             byte[] buffer = new byte[1024];
