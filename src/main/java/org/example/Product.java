@@ -11,9 +11,9 @@ import static org.example.Worker.workerfile;
 public class Product {
     public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
-     static int idp;
-     static int idcus ;
-     static int idprodis ;
+     private static int idp;
+     private static int idcus ;
+     private static int idprodis ;
     public static String name,idtest;
      static String height = " ";
     public static String width;
