@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product lemara 123 يا رب اخر اشي يقل واقوم انام">
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/INVOICECC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/INVOICECC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,20 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00022" summary="update product jana 1">
-      <created>1683710798462</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1683710798462</updated>
-    </task>
-    <task id="LOCAL-00023" summary="test update product jana 1">
-      <created>1683711152621</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1683711152621</updated>
     </task>
     <task id="LOCAL-00024" summary="test update product jana 2">
       <created>1683711378185</created>
@@ -561,7 +548,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683752855931</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="update main lemara 1 يا رب اخر اشي يقل واقوم انام">
+      <created>1683753457166</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1683753457166</updated>
+    </task>
+    <task id="LOCAL-00072" summary="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت">
+      <created>1683753618949</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1683753618950</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,9 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update main lemara 2" />
-    <MESSAGE value="update main lemara 3" />
-    <MESSAGE value="update main lemara 4" />
     <MESSAGE value="update main lemara 5" />
     <MESSAGE value="update main lemara 6 test" />
     <MESSAGE value="update main lemara 7 test" />
@@ -613,7 +611,10 @@
     <MESSAGE value="update product jana4444" />
     <MESSAGE value="update product lemara 123" />
     <MESSAGE value="update product lemara 123 يا رب اخر اشي يقل واقوم انام" />
-    <option name="LAST_COMMIT_MESSAGE" value="update product lemara 123 يا رب اخر اشي يقل واقوم انام" />
+    <MESSAGE value="update product lemara 333 يا رب اخر اشي يقل واقوم انام" />
+    <MESSAGE value="update main lemara 1 يا رب اخر اشي يقل واقوم انام" />
+    <MESSAGE value="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

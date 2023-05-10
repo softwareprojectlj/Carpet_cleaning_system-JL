@@ -33,10 +33,10 @@ public class Main {
         while (true){
         Scanner input1 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Username :   ");
-            adminUsername = input1.next();
+        adminUsername = input1.next();
         Scanner input2 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Password :   ");
-            adminPassword = input2.next();
+        adminPassword = input2.next();
         verify(adminUsername,adminPassword);
         }
 

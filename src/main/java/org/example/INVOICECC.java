@@ -105,7 +105,7 @@ public Integer getprice(String w,String h)
         Double area=(Double.valueOf(w) * Double.valueOf(h));
         if(area<25 && area>0 )
         price=200;
-         else  if(area<=5 && area>0 )
+        else  if(area<=5 && area>0 )
         price=40;
         else if(area<=15 && area>5 )
         price=80;
