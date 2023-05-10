@@ -18,6 +18,7 @@ public class Main {
     public static final String PURPLE = "\u001B[35m";
     public static final String YELLOW = "\u001B[33m";
     static String fileFinancial = "Financialdata.txt";
+    static String entrymsg = "Enter your choice number : ";
     static int count;
     static Scanner in=new Scanner(System.in);
     static String Username;
@@ -38,7 +39,6 @@ public class Main {
         }
     }
     public static void mainmenu(){
-        LOGGER.log(Level.INFO,"------------------------");
         LOGGER.log(Level.INFO,"       <MENU>");
         LOGGER.log(Level.INFO,"[1] Customer data .");
         LOGGER.log(Level.INFO,"[2] Product data .");
@@ -47,8 +47,7 @@ public class Main {
         LOGGER.log(Level.INFO,"[5] Financial Statistics .");
         LOGGER.log(Level.INFO,"[6] Print invoice .");
         LOGGER.log(Level.INFO,"[7] Logout .");
-        LOGGER.log(Level.INFO,"------------------------");
-        LOGGER.log(Level.INFO,"Enter your choice's number : ");
+        LOGGER.log(Level.INFO,entrymsg);
     }
     public static void mainchoice(int s) throws IOException {
 
@@ -85,8 +84,7 @@ public class Main {
             LOGGER.log(Level.INFO,"[3] Delete Customer .");
             LOGGER.log(Level.INFO,"[4] List The Customer By Name .");
             LOGGER.log(Level.INFO,"[5] Back .");
-            LOGGER.log(Level.INFO,"-------------------------");
-            LOGGER.log(Level.INFO,"Enter your choice number : ");
+            LOGGER.log(Level.INFO,entrymsg);
             int x = in.nextInt();
             Customer customer = new Customer();
             ArrayList<String> arrayList = new ArrayList<String>();
@@ -110,16 +108,13 @@ public class Main {
 
     public static void productmenu() throws IOException {
         while (true) {
-
-            LOGGER.log(Level.INFO,"-------------------------");
             LOGGER.log(Level.INFO,"     <Product MENU>     ");
             LOGGER.log(Level.INFO,"[1] Add Product .");
             LOGGER.log(Level.INFO,"[2] Update Product .");
             LOGGER.log(Level.INFO,"[3] Delete Product .");
             LOGGER.log(Level.INFO,"[4] List The Product By Name .");
             LOGGER.log(Level.INFO,"[5] Back .");
-            LOGGER.log(Level.INFO,"-------------------------");
-            LOGGER.log(Level.INFO,"Enter your choice's number : ");
+            LOGGER.log(Level.INFO,entrymsg);
             int y = in.nextInt();
             Product product = new Product();
             ArrayList<String> arrayListP = new ArrayList<String>();
@@ -150,10 +145,7 @@ public class Main {
             while ((line=reader.readLine())!=null){
                 data = line.split(d);
                 if(data[0].equals(nameuser)&& data[1].equals(pass)) {
-                    LOGGER.log(Level.INFO,"-------------------------");
-                    LOGGER.log(Level.INFO,PURPLE
-                            + "   Welcome Mis " + nameuser
-                            + RESET);
+                    LOGGER.log(Level.INFO,PURPLE +"   Welcome Mis " + RESET);
                     while (true){
                         mainmenu();
                         int x = in.nextInt();
