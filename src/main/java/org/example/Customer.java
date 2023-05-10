@@ -17,6 +17,7 @@ public class Customer {
 
      static String customerAddress;
      static String customerEmail;
+
     static String eemailt;
 
     public Customer(String id,String name, String phone, String address,String email){
@@ -34,16 +35,16 @@ public class Customer {
 
         Scanner input = new Scanner(System.in).useDelimiter("\n");
         LOGGER.log(Level.INFO,"Customers Id :  ");
-        id1= input.nextLine();
+        customerId= input.nextLine();
         LOGGER.log(Level.INFO,"Enter Customer Name :  ");
-        name1=input.nextLine();
+        customerName=input.nextLine();
         LOGGER.log(Level.INFO,"Enter Customer Phone :  ");
-        phone1=input.next();
+        customerPhone=input.next();
         LOGGER.log(Level.INFO,"Enter Customer address :  ");
-        address1=input.next();
+        customerAddress=input.next();
         LOGGER.log(Level.INFO,"Enter Customer email :  ");
-        email1=input.next();
-        recordcustomer(id1,name1,phone1,address1,email1);
+        customerEmail=input.next();
+        recordcustomer(customerId,customerName,customerPhone,customerAddress,customerEmail);
     }
 
     public Customer() {

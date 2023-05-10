@@ -21,11 +21,7 @@ public class Main {
     public static String fileFinancial = "Financialdata.txt";
     public static String filenameadmin = "Logindata.txt";
     public static int count;
-    static String id1;
-    static String name1;
-    static String phone1;
-    static String address1;
-    static String email1;
+
     public static Scanner in=new Scanner(System.in);
     public static String Username,Password;
 
