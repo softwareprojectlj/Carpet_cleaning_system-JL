@@ -10,14 +10,14 @@ import java.util.logging.Logger;
 
 public class Worker {
 
-    public static final  String workerfile = "Worker.txt";
+    public static final  String WORKWRFILE = "Worker.txt";
     Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Worker");
     private static int id;
     private static String name;
     private static String phone;
 
-    private static String Statues;
+    private static String statues;
     private static String productname;
 
     public Worker() {
@@ -56,25 +56,16 @@ public class Worker {
     }
 
     public static String getStatues() {
-        return Statues;
+        return statues;
     }
 
     public static void setStatues(String statues) {
-        Statues = statues;
+        statues = statues;
     }
     private List<Product> orders = new ArrayList<Product>();
 
-    public Worker(int idW, String nameW, String phoneW, String StatueW, String productNameW) {
-
-        id = idW;
-        name = nameW;
-        phone = phoneW;
-        Statues = StatueW;
-        productname = productNameW;
-    }
-
     public static String getUserData() {
-        return id + " , " + name + " , " + phone + " , " + Statues + " , " + productname;
+        return id + " , " + name + " , " + phone + " , " + statues + " , " + productname;
     }
 
     public void readfromuser() {
@@ -91,9 +82,9 @@ public class Worker {
         writeWorker(idW, nameW, phoneW, statuesW, productNameW);
     }
 
-    public void writeWorker(int id, String name, String Phone, String statues, String productname) {
+    public void writeWorker(int id, String name, String phone, String statues, String productname) {
         try {
-            FileWriter writer = new FileWriter(workerfile, true);
+            FileWriter writer = new FileWriter(WORKWRFILE, true);
             writer.append(Worker.getUserData());
             writer.append("\n");
             writer.close();

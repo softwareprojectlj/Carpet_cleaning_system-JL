@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static org.example.Worker.workerfile;
+import static org.example.Worker.WORKWRFILE;
 
 public class Product {
     //jana barakeh
@@ -396,7 +396,7 @@ public class Product {
             String output = null;
                  String information ;
                 StringBuilder sb = new StringBuilder();
-                BufferedReader reader = new BufferedReader(new FileReader(workerfile));
+                BufferedReader reader = new BufferedReader(new FileReader(WORKWRFILE));
                 String line2;
                 FileInputStream fin = new FileInputStream(productfile);
                 Scanner sci = new Scanner(fin);
@@ -428,7 +428,7 @@ public class Product {
                     }
                 }
                        try {
-                    FileWriter writer = new FileWriter(workerfile);
+                    FileWriter writer = new FileWriter(WORKWRFILE);
                     for (int i = 0; i < workerarray.size(); i++) {
                         writer.append(workerarray.get(i));
                         writer.append("\n");
