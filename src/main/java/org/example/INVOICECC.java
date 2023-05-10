@@ -4,69 +4,72 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static org.example.Product.productfile;
 
 
-public class invoiceCC {
+public class INVOICECC {
     Integer price;
-    public String Coname;
-    public String Caname;
-    public String addressi;
-    public String pricei;
-    public String datei;
-    public static String invoicefile = "invoice.txt";
+    private String COname;
+    private String CAname;
+    private String addressinvoice;
+    private String priceinvoice;
+    private String dateinvoive;
+    public static final String INVOICEFILE = "invoice.txt";
     Scanner input = new Scanner(System.in).useDelimiter("\n");
+    private static Logger logger = Logger.getLogger("org.example.INVOICECC");
     private String width;
     private String height;
-    public invoiceCC() {
+    public INVOICECC() {
     }
-    public String getConame() {
-        return Coname;
+    public String getCOname() {
+        return COname;
     }
-    public void setConame(String coname) {
-        Coname = coname;
+    public void setCOname(String coname) {
+        COname = coname;
     }
-    public String getCaname() {
-        return Caname;
+    public String getCAname() {
+        return CAname;
     }
-    public void setCaname(String caname) {
-        Caname = caname;
+    public void setCAname(String caname) {
+        CAname = caname;
     }
-    public String getAddressi() {
-        return addressi;
+    public String getAddressinvoice() {
+        return addressinvoice;
     }
-    public void setAddressi(String addressi) {
-        this.addressi = addressi;
+    public void setAddressinvoice(String addressi) {
+        this.addressinvoice = addressi;
     }
-    public String getPricei() {
-        return pricei;
+    public String getPriceinvoice() {
+        return priceinvoice;
     }
-    public void setPricei(String pricei) {
-        this.pricei = pricei;
+    public void setPriceinvoice(String pricei) {
+        this.priceinvoice = pricei;
     }
-    public String getDatei() {
-        return datei;
+    public String getdateinvoice() {
+        return dateinvoive;
     }
-    public void setDatei(String datei) {
-        this.datei = datei;
+    public void setDateinvoice(String datei) {
+        this.dateinvoive = datei;
     }
-    public invoiceCC(String Coname, String Caname, String addressi, String pricei, String datei) {
-        this.Coname = Coname;
-        this.Caname = Caname;
-        this.addressi = addressi;
-        this.pricei = pricei;
-        this.datei = datei;
+    public INVOICECC(String Coname, String Caname, String addressi, String pricei, String datei) {
+        COname = Coname;
+       CAname = Caname;
+       addressinvoice = addressi;
+       priceinvoice = pricei;
+        dateinvoive = datei;
     }
     public void readfromuser() throws IOException {
-        System.out.println("Enter Your Product Id:");
+        logger.log(Level.INFO,"Enter Your Product Id:");
         int idinvoice = Integer.parseInt(input.nextLine());
         printinvoice(idinvoice);
     }
   public void printinvoice(int id) throws IOException {
       String []data=null;
       while(true) {
-          FileWriter writer = new FileWriter(invoicefile, true);
+          FileWriter writer = new FileWriter(INVOICEFILE, true);
           FileInputStream fin = new FileInputStream(productfile);
           String output = "this product is not available";
           Scanner sci = new Scanner(fin);
@@ -90,20 +93,19 @@ public class invoiceCC {
                     writer.append(output);
                     writer.append("\n");
                     writer.close();
-                    System.out.println(output);
-                    System.out.println("invoice ready!");
+          logger.log(Level.INFO,output);
+          logger.log(Level.INFO,"invoice ready!");
                     break;
 }
                 }
 public Integer getprice(String w,String h)
         {
-        Integer price;
         this.width=w;
         this.height=h;
         Double area=(Double.valueOf(w) * Double.valueOf(h));
         if(area<25 && area>0 )
         price=200;
-        if(area<=5 && area>0 )
+         else  if(area<=5 && area>0 )
         price=40;
         else if(area<=15 && area>5 )
         price=80;
@@ -119,7 +121,6 @@ public Integer getprice(String w,String h)
         price=320;
         else
         price=450;
-        price=380;
         return price;
         }
 public double applyDiscount(Integer pricedis) {

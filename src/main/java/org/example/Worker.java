@@ -20,8 +20,6 @@ public class Worker {
     private static String statues;
     private static String productname;
 
-    public Worker() {
-    }
 
     public static int getId() {
         return id;
