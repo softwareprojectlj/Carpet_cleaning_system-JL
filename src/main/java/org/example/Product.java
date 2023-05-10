@@ -201,9 +201,9 @@ public class Product {
     }
     public static void countno(int r){
 
+
         priceno=priceno+r;
     }
-
     public static void stateprizeno(){
         try {
             BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
