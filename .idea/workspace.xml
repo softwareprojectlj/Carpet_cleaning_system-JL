@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara test 13">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product jana4444" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +46,6 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -78,9 +72,6 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LSzSFqbpS8KSgHiGxfcILc5fWg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -218,81 +209,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="" />
+      <changelist id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product jana122" />
       <created>1675879271519</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00009" summary="last 8-3">
-      <created>1678306180970</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1678306180970</updated>
-    </task>
-    <task id="LOCAL-00010" summary="last 8-3">
-      <created>1681839555037</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1681839555037</updated>
-    </task>
-    <task id="LOCAL-00011" summary="lastttttttttttt">
-      <created>1681839641288</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681839641288</updated>
-    </task>
-    <task id="LOCAL-00012" summary="lastttttttttttt">
-      <created>1681839858251</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1681839858251</updated>
-    </task>
-    <task id="LOCAL-00013" summary="final commit (All project)">
-      <created>1683455010324</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1683455010324</updated>
-    </task>
-    <task id="LOCAL-00014" summary="update small bug1">
-      <created>1683623227904</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1683623227904</updated>
-    </task>
-    <task id="LOCAL-00015" summary="update small bug2">
-      <created>1683623607889</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1683623607889</updated>
-    </task>
-    <task id="LOCAL-00016" summary="update customer 1">
-      <created>1683624034472</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1683624034472</updated>
-    </task>
-    <task id="LOCAL-00017" summary="update customer 2">
-      <created>1683624242180</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1683624242180</updated>
-    </task>
-    <task id="LOCAL-00018" summary="update customer 3">
-      <created>1683634339484</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1683634339484</updated>
     </task>
     <task id="LOCAL-00019" summary="update customer 4">
       <created>1683634482693</created>
@@ -546,28 +467,98 @@
       <option name="project" value="LOCAL" />
       <updated>1683727148548</updated>
     </task>
-    <task id="LOCAL-00055" summary="update main lemara test 11">
-      <created>1683727620199</created>
+    <task id="LOCAL-00055" summary="update product jana122">
+      <created>1683727985101</created>
       <option name="number" value="00055" />
       <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1683727620199</updated>
+      <updated>1683727985102</updated>
     </task>
-    <task id="LOCAL-00056" summary="update main lemara test 12">
-      <created>1683728259369</created>
+    <task id="LOCAL-00056" summary="update product jana133">
+      <created>1683737289260</created>
       <option name="number" value="00056" />
       <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1683728259369</updated>
+      <updated>1683737289261</updated>
     </task>
-    <task id="LOCAL-00057" summary="update main lemara test 13">
-      <created>1683728290818</created>
+    <task id="LOCAL-00057" summary="update worker jana222">
+      <created>1683738061231</created>
       <option name="number" value="00057" />
       <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1683728290818</updated>
+      <updated>1683738061231</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="update worker jana last">
+      <created>1683738277465</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1683738277465</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update worker jana 97865">
+      <created>1683738393021</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1683738393021</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update worker jana not last hhhhh">
+      <created>1683739287629</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1683739287629</updated>
+    </task>
+    <task id="LOCAL-00061" summary="update teserename product jana">
+      <created>1683739986079</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1683739986080</updated>
+    </task>
+    <task id="LOCAL-00062" summary="update  product jana 7878">
+      <created>1683740604613</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1683740604613</updated>
+    </task>
+    <task id="LOCAL-00063" summary="update  invoice jana 2222">
+      <created>1683741489767</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1683741489767</updated>
+    </task>
+    <task id="LOCAL-00064" summary="update  invoice jana 3333">
+      <created>1683742277773</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1683742277773</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update  product jana hotspots">
+      <created>1683742775793</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1683742775793</updated>
+    </task>
+    <task id="LOCAL-00066" summary="update product removestatic">
+      <created>1683748744246</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1683748744247</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update product jana4444">
+      <created>1683749438785</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1683749438785</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -594,16 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update customer lemara 17 after edit idc" />
-    <MESSAGE value="update customer lemara 18 after edit idc" />
-    <MESSAGE value="update customer lemara 19 after edit idc" />
-    <MESSAGE value="update customer lemara 20 WITHOUT edit idc" />
-    <MESSAGE value="update customer lemara 21 after edit" />
-    <MESSAGE value="update customer lemara 22 main+customer edit" />
-    <MESSAGE value="update customer lemara 23 main+customer edit" />
-    <MESSAGE value="update customer lemara 24 main+customer edit" />
-    <MESSAGE value="update customer lemara 25 يا رب ما انجلط main+customer edit" />
-    <MESSAGE value="update customer lemara 30 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
     <MESSAGE value="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
     <MESSAGE value="update main lemara 1" />
     <MESSAGE value="update main lemara 2" />
@@ -616,10 +597,20 @@
     <MESSAGE value="update main lemara test 9" />
     <MESSAGE value="update main lemara test 10" />
     <MESSAGE value="update main lemara test entry msg" />
-    <MESSAGE value="update main lemara test 11" />
-    <MESSAGE value="update main lemara test 12" />
-    <MESSAGE value="update main lemara test 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="update main lemara test 13" />
+    <MESSAGE value="update product jana122" />
+    <MESSAGE value="update product jana133" />
+    <MESSAGE value="update worker jana222" />
+    <MESSAGE value="update worker jana last" />
+    <MESSAGE value="update worker jana 97865" />
+    <MESSAGE value="update worker jana not last hhhhh" />
+    <MESSAGE value="update teserename product jana" />
+    <MESSAGE value="update  product jana 7878" />
+    <MESSAGE value="update  invoice jana 2222" />
+    <MESSAGE value="update  invoice jana 3333" />
+    <MESSAGE value="update  product jana hotspots" />
+    <MESSAGE value="update product removestatic" />
+    <MESSAGE value="update product jana4444" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product jana4444" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -632,13 +623,13 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>io.cucumber.core.cli.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Scenario__product_recorded_successfully.ic" NAME="Scenario: product recorded successfully Coverage Results" MODIFIED="1682589302868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordCustomer.ic" NAME="Feature: recordCustomer Coverage Results" MODIFIED="1682589388091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
   </component>

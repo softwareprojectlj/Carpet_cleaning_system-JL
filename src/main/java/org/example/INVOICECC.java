@@ -12,8 +12,8 @@ import static org.example.Product.PRODUCTFILE;
 
 public class INVOICECC {
     Integer price;
-    private String COname;
-    private String CAname;
+    private String nameCO;
+    private String nameCA;
     private String addressinvoice;
     private String priceinvoice;
     private String dateinvoive;
@@ -25,16 +25,16 @@ public class INVOICECC {
     public INVOICECC() {
     }
     public String getCOname() {
-        return COname;
+        return nameCO;
     }
     public void setCOname(String coname) {
-        COname = coname;
+        nameCO = coname;
     }
     public String getCAname() {
-        return CAname;
+        return nameCA;
     }
     public void setCAname(String caname) {
-        CAname = caname;
+        nameCA = caname;
     }
     public String getAddressinvoice() {
         return addressinvoice;
@@ -54,9 +54,9 @@ public class INVOICECC {
     public void setDateinvoice(String datei) {
         this.dateinvoive = datei;
     }
-    public INVOICECC(String Coname, String Caname, String addressi, String pricei, String datei) {
-        COname = Coname;
-       CAname = Caname;
+    public INVOICECC(String nameCOO, String nameCAA, String addressi, String pricei, String datei) {
+        nameCO = nameCOO;
+        nameCA = nameCAA;
        addressinvoice = addressi;
        priceinvoice = pricei;
         dateinvoive = datei;
@@ -74,8 +74,8 @@ public class INVOICECC {
           String output = "this product is not available";
           Scanner sci = new Scanner(fin);
           while (sci.hasNextLine()) {
-              String Line = sci.nextLine();
-        data = Line.split(" , ");
+              String line = sci.nextLine();
+        data = line.split(" , ");
         if (data[0].startsWith(String.valueOf(id))) {
             String infoemation ;
             if(getprice(data[2], data[3])>=250)

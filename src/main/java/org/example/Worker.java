@@ -13,12 +13,12 @@ public class Worker {
     public static final  String WORKWRFILE = "Worker.txt";
     Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Worker");
-    private static int id;
-    private static String name;
-    private static String phone;
+   static int id;
+     static String name;
+    static String phone;
 
-    private static String statues;
-    private static String productname;
+     static String statues;
+    static String productname;
 
 
     public static int getId() {
@@ -58,7 +58,7 @@ public class Worker {
     }
 
     public static void setStatues(String statues) {
-        statues = statues;
+        Worker.statues = statues;
     }
     private List<Product> orders = new ArrayList<Product>();
 
