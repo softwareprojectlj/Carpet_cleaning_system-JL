@@ -1,16 +1,18 @@
 package org.example;
-
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import static org.example.Main.*;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import static org.example.Worker.workerfile;
 
 public class Product {
     public static final String productfile = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
+    private Logger logger = Logger.getLogger("org.example.Product");
      private static int idp;
      private static int idcus ;
      private static int idprodis ;
@@ -23,7 +25,7 @@ public class Product {
     private static String state;
     private static int priceyes ;
     private static int priceno;
-
+    private static String prizstate;
     public static String getPrizstate() {
         return prizstate;
     }
@@ -31,8 +33,6 @@ public class Product {
     public static void setPrizstate(String prizstate) {
         Product.prizstate = prizstate;
     }
-
-    public static String prizstate;
 
     public static int getIdp() {
         return idp;
@@ -120,21 +120,20 @@ public class Product {
     }
 
     public void readfromuserp() {
-        //Scanner input = new Scanner(System.in).useDelimiter("\n");
-        System.out.println("Add your product:");
+      logger.log(Level.INFO,"Add your product:");
         System.out.print("product Id :  ");
         int idr = Integer.parseInt(input.nextLine());
-        System.out.println("the name of the product:");
+        logger.log(Level.INFO,"the name of the product:");
         String namer = input.nextLine();
-        System.out.println("the height of the product:");
+        logger.log(Level.INFO,"the height of the product:");
         String Hr = input.nextLine();
-        System.out.println("the width of the product:");
+        logger.log(Level.INFO,"the width of the product:");
         String Wr = input.nextLine();
-        System.out.println("the Delivery time:");
+        logger.log(Level.INFO,"the Delivery time:");
         String dayr = input.nextLine();
-        System.out.println("the id for customer:");
+        logger.log(Level.INFO,"the id for customer:");
         int idcust = Integer.parseInt(input.nextLine());
-        System.out.println("Paid or not :");
+        logger.log(Level.INFO,"Paid or not :");
         String pstate = input.nextLine();
         String statep = "waiting";
 
