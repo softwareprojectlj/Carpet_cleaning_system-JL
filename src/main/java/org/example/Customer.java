@@ -137,7 +137,7 @@ public class Customer {
             LOGGER.log(Level.INFO,YELLOW+"Customer Deleted Successfully."+RESET);
         }}
 
-    public  void gettemail() {
+    public void gettemail() {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filenamecustomer));
             String idstatec= Product.idtest;

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara test 11">
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara test 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
     </list>
@@ -50,6 +51,7 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -76,6 +78,9 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LSzSFqbpS8KSgHiGxfcILc5fWg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -218,20 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00007" summary="commit num 3">
-      <created>1677841155986</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1677841155986</updated>
-    </task>
-    <task id="LOCAL-00008" summary="commit num 4">
-      <created>1677851482619</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1677851482619</updated>
     </task>
     <task id="LOCAL-00009" summary="last 8-3">
       <created>1678306180970</created>
@@ -562,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683727620199</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="update main lemara test 12">
+      <created>1683728259369</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1683728259369</updated>
+    </task>
+    <task id="LOCAL-00057" summary="update main lemara test 13">
+      <created>1683728290818</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1683728290818</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +594,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update customer lemara 16" />
-    <MESSAGE value="update customer lemara 17 after delete this" />
     <MESSAGE value="update customer lemara 17 after edit idc" />
     <MESSAGE value="update customer lemara 18 after edit idc" />
     <MESSAGE value="update customer lemara 19 after edit idc" />
@@ -614,7 +617,9 @@
     <MESSAGE value="update main lemara test 10" />
     <MESSAGE value="update main lemara test entry msg" />
     <MESSAGE value="update main lemara test 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="update main lemara test 11" />
+    <MESSAGE value="update main lemara test 12" />
+    <MESSAGE value="update main lemara test 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main lemara test 13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
