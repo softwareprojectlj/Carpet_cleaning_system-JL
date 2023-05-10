@@ -33,8 +33,6 @@ public class Customer {
     public void readfromuser(){
 
         Scanner input = new Scanner(System.in).useDelimiter("\n");
-
-
         LOGGER.log(Level.INFO,"Customers Id :  ");
         id1= input.nextLine();
         LOGGER.log(Level.INFO,"Enter Customer Name :  ");
