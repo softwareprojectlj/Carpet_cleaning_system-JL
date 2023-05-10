@@ -23,7 +23,8 @@ public class Customer {
      static String phonec;
 
      static String addressc;
-     static String emailc,eemailt;
+     static String emailc;
+    static String eemailt;
 
 
     public static String getEmailc() {
