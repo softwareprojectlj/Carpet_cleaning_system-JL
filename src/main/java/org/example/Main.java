@@ -73,8 +73,8 @@ public class Main {
             Product.writef();
         }
         else if (s==6){
-            INVOICECC I=new INVOICECC();
-            I.readfromuser();
+            INVOICECC invoicecc=new INVOICECC();
+            invoicecc.readfromuser();
         }
         else if (s==7){
             System.exit(1);
@@ -108,7 +108,7 @@ public class Main {
                 break;
             }}}
 
-    public static void productmenu() throws IOException {
+    public static void productmenu() {
         while (true) {
             LOGGER.log(Level.INFO,"     <Product MENU>     ");
             LOGGER.log(Level.INFO,"[1] Add Product .");
@@ -138,7 +138,7 @@ public class Main {
 
     public static void verify(String nameuser, String pass){
         String line;
-        String data[];
+        String [] data;
         String d=",";
         try {
 
@@ -171,9 +171,6 @@ public static   void test() {
     final String user = "";
     final String password = "";
     String to = Customer.eemailt;
-    ;
-    String to1 = "    ";
-
     Properties props = new Properties();
     props.put("mail.smtp.auth", "true");
     props.put("mail.smtp.port", "587");

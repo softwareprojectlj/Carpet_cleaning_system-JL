@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product jana4444" />
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product lemara 123 يا رب اخر اشي يقل واقوم انام">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,27 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00019" summary="update customer 4">
-      <created>1683634482693</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1683634482693</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update customer 5">
-      <created>1683655400514</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1683655400514</updated>
-    </task>
-    <task id="LOCAL-00021" summary="update customer 6">
-      <created>1683705701164</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1683705701164</updated>
     </task>
     <task id="LOCAL-00022" summary="update product jana 1">
       <created>1683710798462</created>
@@ -558,7 +540,28 @@
       <option name="project" value="LOCAL" />
       <updated>1683749438785</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="update product lemara 123">
+      <created>1683752455656</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1683752455657</updated>
+    </task>
+    <task id="LOCAL-00069" summary="update product lemara 123">
+      <created>1683752749298</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1683752749298</updated>
+    </task>
+    <task id="LOCAL-00070" summary="update product lemara 123 يا رب اخر اشي يقل واقوم انام">
+      <created>1683752855931</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1683752855931</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,8 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update customer lemara 31 والاخير ان شاء الله بملف الكستمر عشان ما انجلط" />
-    <MESSAGE value="update main lemara 1" />
     <MESSAGE value="update main lemara 2" />
     <MESSAGE value="update main lemara 3" />
     <MESSAGE value="update main lemara 4" />
@@ -610,7 +611,9 @@
     <MESSAGE value="update  product jana hotspots" />
     <MESSAGE value="update product removestatic" />
     <MESSAGE value="update product jana4444" />
-    <option name="LAST_COMMIT_MESSAGE" value="update product jana4444" />
+    <MESSAGE value="update product lemara 123" />
+    <MESSAGE value="update product lemara 123 يا رب اخر اشي يقل واقوم انام" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product lemara 123 يا رب اخر اشي يقل واقوم انام" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -623,13 +626,13 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Scenario__product_recorded_successfully.ic" NAME="Scenario: product recorded successfully Coverage Results" MODIFIED="1682589302868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordCustomer.ic" NAME="Feature: recordCustomer Coverage Results" MODIFIED="1682589388091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>io.cucumber.core.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
   </component>
