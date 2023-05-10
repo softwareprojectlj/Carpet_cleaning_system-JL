@@ -79,7 +79,6 @@ public class Main {
         }}
     public static void customermenu(){
         while (true) {
-
             LOGGER.log(Level.INFO,"     <Customer MENU>     ");
             LOGGER.log(Level.INFO,"[1] Add Customer .");
             LOGGER.log(Level.INFO,"[2] Update Customer .");
