@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static org.example.Product.productfile;
+import static org.example.Product.PRODUCTFILE;
 
 
 public class INVOICECC {
@@ -70,7 +70,7 @@ public class INVOICECC {
       String []data=null;
       while(true) {
           FileWriter writer = new FileWriter(INVOICEFILE, true);
-          FileInputStream fin = new FileInputStream(productfile);
+          FileInputStream fin = new FileInputStream(PRODUCTFILE);
           String output = "this product is not available";
           Scanner sci = new Scanner(fin);
           while (sci.hasNextLine()) {

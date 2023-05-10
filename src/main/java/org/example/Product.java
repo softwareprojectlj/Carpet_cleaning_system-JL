@@ -3,30 +3,31 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import static org.example.Main.*;
-import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static org.example.Worker.WORKWRFILE;
 
 public class Product {
-    //jana barakeh
-    public static final String productfile = "product.txt";
+    int price;
+    public static final String PRODUCTFILE = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Product");
-     private static int idp;
-     private static int idcus ;
+     private static int PRODUCTid;
+     private static int custmorID ;
      private static int idprodis ;
-    private static String name;
+    private static String PRODUCTname;
     static String idtest;
-     static String height = " ";
-    private static String width;
-    private static String dayfinish;
-    private static int price;
-    private static String state;
+     static String PRODUCTheight = " ";
+    private static String PRODUCTwidth;
+    private static String PRODUCTdayfinish;
+    private static int PRODUCTprice;
+    private static String PRODUCTstate;
     private static int priceyes ;
     private static int priceno;
     private static String prizstate;
+    private static int CustmorID;
+
     public static String getPrizstate() {
         return prizstate;
     }
@@ -35,89 +36,84 @@ public class Product {
         Product.prizstate = prizstate;
     }
 
-    public static int getIdp() {
-        return idp;
+    public static int getPRODUCTid() {
+        return PRODUCTid;
     }
 
-    public static int getIdcus() {
-        return idcus;
+    public static int getCustmorID() {
+        return custmorID;
     }
 
-    public static void setIdcus(int idcus) {
-        Product.idcus = idcus;
+    public static void setCustmorID(int idcus) {
+        Product.CustmorID = idcus;
     }
 
-    public static int getPrice() {
-        return price;
+    public static int getPRODUCTprice() {
+        return PRODUCTprice;
     }
 
-    public static void setPrice(int price) {
-        Product.price = price;
+    public static void setPRODUCTprice(int price) {
+        Product.PRODUCTprice = price;
     }
 
-    public static String getState() {
-        return state;
+    public static String getPRODUCTstate() {
+        return PRODUCTstate;
     }
 
-    public static void setState(String state) {
-        Product.state = state;
+    public static void setPRODUCTstate(String state) {
+        Product.PRODUCTstate = state;
+    }
+    public static void setPRODUCTid(int idp) {
+        Product.PRODUCTid = idp;
     }
 
-    public static int getId() {
-        return idp;
+    public String getPRODUCTname() {
+        return PRODUCTname;
     }
 
-    public static void setIdp(int idp) {
-        Product.idp = idp;
+    public static void setPRODUCTname(String name) {
+        Product.PRODUCTname = name;
     }
 
-    public String getName() {
-        return name;
+    public static String getPRODUCTHeight() {
+        return PRODUCTheight;
     }
 
-    public static void setName(String name) {
-        Product.name = name;
+    public static void setPRODUCTHeight(String height) {
+        Product.PRODUCTheight = height;
     }
 
-    public static String getHeight() {
-        return height;
+    public static String getPRODUCTWidth() {
+        return PRODUCTwidth;
     }
 
-    public static void setHeight(String height) {
-        Product.height = height;
+    public static void setPRODUCTwidth(String width) {
+        Product.PRODUCTwidth = width;
     }
 
-    public static String getWidth() {
-        return width;
-    }
-
-    public static void setWidth(String width) {
-        Product.width = width;
-    }
-
-    public static String getDayfinish() {
-        return dayfinish;
+    public static String getPRODUCTDayfinish() {
+        return PRODUCTdayfinish;
     }
 
 
-    public static void setDayfinish(String dayfinish) {
-        Product.dayfinish = dayfinish;
+    public static void setPRODUCTDayfinish(String dayfinish) {
+        Product.PRODUCTdayfinish = dayfinish;
     }
 
     public Product(int id, String namep, String H, String W, String D, int p, String s, int idcu, String pstate) {
-        this.idp = id;
-        this.name = namep;
-        this.height = H;
-        this.width = W;
-        this.dayfinish = D;
-        this.price = p;
-        this.state = s;
-        this.idcus = idcu;
-        this.prizstate = pstate;
+        PRODUCTid = id;
+        PRODUCTname = namep;
+        PRODUCTheight = H;
+        PRODUCTwidth = W;
+        PRODUCTdayfinish = D;
+        PRODUCTprice = p;
+        PRODUCTstate = s;
+       CustmorID = idcu;
+        prizstate = pstate;
     }
 
     public static String getUserData() {
-        return idp + " , " + name + " , " + height + " , " + width + " , " + dayfinish + " , " + price + " , " + state + " , " + idcus+ " , " + prizstate;
+        return PRODUCTid + " , " + PRODUCTname + " , " + PRODUCTheight + " , " + PRODUCTwidth + " , " + PRODUCTdayfinish + " , " + PRODUCTprice + " , " + PRODUCTstate + " , " + CustmorID+ " , " + prizstate;
     }
 
     public void readfromuserp() {
@@ -150,7 +146,7 @@ public class Product {
         Product p = new Product(id, name, height, width, dayfinish, price, statep, idcust , pstate);
 
         try {
-            FileWriter writer = new FileWriter(productfile, true);
+            FileWriter writer = new FileWriter(PRODUCTFILE, true);
             writer.append(p.getUserData());
             writer.append("\n");
             writer.close();
@@ -163,7 +159,7 @@ public class Product {
 
     public static void deleteRecordproById(ArrayList<String> arrayList, Scanner input) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             logger.log(Level.INFO,"Enter An Id To Delete A Product : ");
             String searchKey = input.next();
             String line;
@@ -182,7 +178,7 @@ public class Product {
             e.printStackTrace();
         }
         try {
-            FileWriter writer = new FileWriter(productfile);
+            FileWriter writer = new FileWriter(PRODUCTFILE);
             for (int i = 0; i < arrayList.size(); i++) {
                 writer.append(arrayList.get(i));
                 writer.append("\n");
@@ -226,7 +222,7 @@ public class Product {
         } catch (Exception e) {
         }
         try {
-            FileWriter writer = new FileWriter(productfile);
+            FileWriter writer = new FileWriter(PRODUCTFILE);
             for (int i = 0; i < arrayList.size(); i++) {
                 writer.append(arrayList.get(i));
                 writer.append("\n");
@@ -244,7 +240,7 @@ public class Product {
     public static void updateproduct(ArrayList<String> arrayList) throws IOException {
         try {
             String update[] = null;
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             logger.log(Level.INFO,"-----Update Product------\n");
             logger.log(Level.INFO,"enter the ID of the product:");
             int id = input.nextInt();
@@ -271,7 +267,7 @@ public class Product {
             e.printStackTrace();
         }
         try {
-            FileWriter writer = new FileWriter(productfile);
+            FileWriter writer = new FileWriter(PRODUCTFILE);
             for (int i = 0; i < arrayList.size(); i++) {
                 writer.append(arrayList.get(i));
                 writer.append("\n");
@@ -289,7 +285,7 @@ public class Product {
         String[] FindP = null;
         String output = null;
         while (true) {
-            FileInputStream fin = new FileInputStream(productfile);
+            FileInputStream fin = new FileInputStream(PRODUCTFILE);
             Scanner sci = new Scanner(fin);
             while (sci.hasNextLine()) {
                 String Line = sci.nextLine();
@@ -315,7 +311,7 @@ public class Product {
 
     public static void stateprizeyes(){
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             String sprizeflag="yes";
             String line;
             while ((line = reader.readLine()) != null) {
@@ -337,7 +333,7 @@ public class Product {
 
     public static void stateprizeno(){
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             String sprizeflag="no";
             String line;
             while ((line = reader.readLine()) != null) {
@@ -371,7 +367,7 @@ public class Product {
 
     public static void compliteflag() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             String stateflag="complete";
             String line;
             while ((line = reader.readLine()) != null) {
@@ -398,7 +394,7 @@ public class Product {
                 StringBuilder sb = new StringBuilder();
                 BufferedReader reader = new BufferedReader(new FileReader(WORKWRFILE));
                 String line2;
-                FileInputStream fin = new FileInputStream(productfile);
+                FileInputStream fin = new FileInputStream(PRODUCTFILE);
                 Scanner sci = new Scanner(fin);
                 while (sci.hasNextLine()) {
                     String Line = sci.nextLine();
@@ -442,7 +438,7 @@ public class Product {
     public static void raya(Integer idupdd){
         ArrayList<String> productpp=new ArrayList<>();
         try {
-            FileReader fr=new FileReader(productfile);
+            FileReader fr=new FileReader(PRODUCTFILE);
             BufferedReader br =new BufferedReader(fr);
             String updatestate[] = null;
            String line;
@@ -469,7 +465,7 @@ public class Product {
             throw new RuntimeException(e);
         }
         try{
-            FileWriter writer=new FileWriter(productfile);
+            FileWriter writer=new FileWriter(PRODUCTFILE);
             for(int i=0;i<productpp.size();i++){
                 writer.append(productpp.get(i));
                 writer.append("\n");
@@ -481,8 +477,8 @@ public class Product {
     }
     public Integer getprice(String w,String h)
     {
-        this.width=w;
-        this.height=h;
+        this.PRODUCTwidth=w;
+        this.PRODUCTheight=h;
         Double area=(Double.valueOf(w) * Double.valueOf(h));
         if(area<=5 && area>0 )
             price=40;
@@ -515,7 +511,7 @@ public class Product {
     public static void getAllproduct() {
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(productfile));
+            BufferedReader reader = new BufferedReader(new FileReader(PRODUCTFILE));
             String line;
             logger.log(Level.INFO,"--------------------the list of product--------------------");
 
