@@ -64,12 +64,13 @@ public class Worker {
     }
     private List<Product> orders = new ArrayList<Product>();
 
-    public Worker(int idW, String nameW, String phoneW, String StatuesW, String productNameW) {
-        this.id = idW;
-        this.name = nameW;
-        this.phone = phoneW;
-        this.Statues = StatuesW;
-        this.productname = productNameW;
+    public Worker(int idW, String nameW, String phoneW, String StatueW, String productNameW) {
+
+        id = idW;
+        name = nameW;
+        phone = phoneW;
+        Statues = StatueW;
+        productname = productNameW;
     }
 
     public static String getUserData() {
@@ -91,8 +92,6 @@ public class Worker {
     }
 
     public void writeWorker(int id, String name, String Phone, String statues, String productname) {
-        Worker W = new Worker(id, name, Phone, statues, productname);
-
         try {
             FileWriter writer = new FileWriter(workerfile, true);
             writer.append(Worker.getUserData());

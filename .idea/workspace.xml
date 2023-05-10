@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update printproduct jana" />
+    <list default="true" id="2fabc9db-f1c7-4d24-bf6b-0acc7a0c3caa" name="Changes" comment="update printworker jana" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -411,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683716350422</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update printworker jana">
+      <created>1683717176402</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1683717176402</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +467,8 @@
     <MESSAGE value="update product jana 3" />
     <MESSAGE value="update product jana 4" />
     <MESSAGE value="update printproduct jana" />
-    <option name="LAST_COMMIT_MESSAGE" value="update printproduct jana" />
+    <MESSAGE value="update printworker jana" />
+    <option name="LAST_COMMIT_MESSAGE" value="update printworker jana" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
