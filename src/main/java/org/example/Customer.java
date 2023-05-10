@@ -171,6 +171,7 @@ public class Customer {
         }
     }
     public  void getAllcustomer(){
+
         try {
             BufferedReader reader=new BufferedReader(new FileReader(filenamecustomer));
             String line;
