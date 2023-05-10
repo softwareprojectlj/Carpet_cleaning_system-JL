@@ -52,14 +52,14 @@ public class Customer {
         address1=input.next();
         LOGGER.log(Level.INFO,"Enter Customer's email :  ");
         email1=input.next();
-        record(id1,name1,phone1,address1,email1);
+        recordcustomer(id1,name1,phone1,address1,email1);
     }
 
     public Customer() {
 
     }
 
-    public void record(String id,String name, String phone, String address,String email){
+    public void recordcustomer(String id,String name, String phone, String address,String email){
 
         Customer customer= new Customer(id,name,phone,address,email);
         try {
