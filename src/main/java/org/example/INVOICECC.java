@@ -77,7 +77,7 @@ public class INVOICECC {
               String Line = sci.nextLine();
         data = Line.split(" , ");
         if (data[0].startsWith(String.valueOf(id))) {
-            String infoemation = "Product Name :\t" + data[1] + "\n" + "Price :\t" + getprice(data[2], data[3]) + "\n" + "day delivered :\t" + data[4] + "\n-------------------------------------------------------------------------------" + "\n";
+            String infoemation ;
             if(getprice(data[2], data[3])>=250)
             {
                 int pd=getprice(data[2], data[3]);

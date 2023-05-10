@@ -13,92 +13,20 @@ public class Product {
     public static final String PRODUCTFILE = "product.txt";
     static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.Product");
-     private static int PRODUCTid;
-     private static int custmorID ;
-     private static int idprodis ;
-    private static String PRODUCTname;
+     private  int PRODUCTid;
+     private   int custmorID ;
+     private   int idprodis ;
+    private   String PRODUCTname;
     static String idtest;
-     static String PRODUCTheight = " ";
-    private static String PRODUCTwidth;
-    private static String PRODUCTdayfinish;
-    private static int PRODUCTprice;
-    private static String PRODUCTstate;
+     static String PRODUCTheight ;
+    private  static String PRODUCTwidth;
+    private  static String PRODUCTdayfinish;
+    private  static int PRODUCTprice;
+    private  String PRODUCTstate;
     private static int priceyes ;
     private static int priceno;
-    private static String prizstate;
-    private static int CustmorID;
-
-    public static String getPrizstate() {
-        return prizstate;
-    }
-
-    public static void setPrizstate(String prizstate) {
-        Product.prizstate = prizstate;
-    }
-
-    public static int getPRODUCTid() {
-        return PRODUCTid;
-    }
-
-    public static int getCustmorID() {
-        return custmorID;
-    }
-
-    public static void setCustmorID(int idcus) {
-        Product.CustmorID = idcus;
-    }
-
-    public static int getPRODUCTprice() {
-        return PRODUCTprice;
-    }
-
-    public static void setPRODUCTprice(int price) {
-        Product.PRODUCTprice = price;
-    }
-
-    public static String getPRODUCTstate() {
-        return PRODUCTstate;
-    }
-
-    public static void setPRODUCTstate(String state) {
-        Product.PRODUCTstate = state;
-    }
-    public static void setPRODUCTid(int idp) {
-        Product.PRODUCTid = idp;
-    }
-
-    public String getPRODUCTname() {
-        return PRODUCTname;
-    }
-
-    public static void setPRODUCTname(String name) {
-        Product.PRODUCTname = name;
-    }
-
-    public static String getPRODUCTHeight() {
-        return PRODUCTheight;
-    }
-
-    public static void setPRODUCTHeight(String height) {
-        Product.PRODUCTheight = height;
-    }
-
-    public static String getPRODUCTWidth() {
-        return PRODUCTwidth;
-    }
-
-    public static void setPRODUCTwidth(String width) {
-        Product.PRODUCTwidth = width;
-    }
-
-    public static String getPRODUCTDayfinish() {
-        return PRODUCTdayfinish;
-    }
-
-
-    public static void setPRODUCTDayfinish(String dayfinish) {
-        Product.PRODUCTdayfinish = dayfinish;
-    }
+    private  String prizstate;
+    private  int CustmorID;
 
     public Product(int id, String namep, String H, String W, String D, int p, String s, int idcu, String pstate) {
         PRODUCTid = id;
@@ -112,7 +40,7 @@ public class Product {
         prizstate = pstate;
     }
 
-    public static String getUserData() {
+    public  String getUserData() {
         return PRODUCTid + " , " + PRODUCTname + " , " + PRODUCTheight + " , " + PRODUCTwidth + " , " + PRODUCTdayfinish + " , " + PRODUCTprice + " , " + PRODUCTstate + " , " + CustmorID+ " , " + prizstate;
     }
 
