@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara 444" />
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update main lemara 6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,20 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update lemara 13">
-      <created>1683715211006</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1683715211006</updated>
-    </task>
-    <task id="LOCAL-00027" summary="update customer lemara 15">
-      <created>1683719318829</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1683719318829</updated>
     </task>
     <task id="LOCAL-00028" summary="update customer lemara 16">
       <created>1683719505062</created>
@@ -558,7 +546,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683754496353</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="update main lemara 5">
+      <created>1683754638693</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1683754638693</updated>
+    </task>
+    <task id="LOCAL-00076" summary="update main lemara 6">
+      <created>1683754734748</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1683754734748</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,8 +587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update main lemara 6 test" />
-    <MESSAGE value="update main lemara 7 test" />
     <MESSAGE value="update main lemara 8 test" />
     <MESSAGE value="update main lemara test 9" />
     <MESSAGE value="update main lemara test 10" />
@@ -610,7 +610,9 @@
     <MESSAGE value="update main lemara 1 يا رب اخر اشي يقل واقوم انام" />
     <MESSAGE value="update main lemara 2 يا رب اخر اشي يقل واقوم اناملانيييييييي تعبتتتتتتتتتتتتتتتتتتتتت" />
     <MESSAGE value="update main lemara 444" />
-    <option name="LAST_COMMIT_MESSAGE" value="update main lemara 444" />
+    <MESSAGE value="update main lemara 5" />
+    <MESSAGE value="update main lemara 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main lemara 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -162,7 +162,7 @@ public class Product {
         }
     }
 
-    public  void Findproduct()  {
+    public  void Findproductbyname()  {
         try {
             BufferedReader reader=new BufferedReader(new FileReader(PRODUCTFILE));
             logger.log(Level.INFO,"Please Enter Name Of Product To Get Product Data  :");
