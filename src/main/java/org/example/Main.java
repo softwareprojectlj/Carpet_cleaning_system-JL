@@ -64,7 +64,7 @@ public class Main {
             Product p=new Product();
             ArrayList<String> worker=new ArrayList<>();
             p.listofworker();
-            p.Distribute(worker);
+            p.distribute(worker);
         }
         else if (s==4){
             compliteflag();

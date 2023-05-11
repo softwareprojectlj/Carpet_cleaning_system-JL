@@ -257,7 +257,7 @@ public class Product {
         }
     }
 
-    public void Distribute(List<String> workerarray) throws IOException {
+    public void distribute(List<String> workerarray) throws IOException {
         String[] distributeP;
         String[] distributeW;
         logger.log(Level.INFO,"\tenter the ID of the product:\t ");
