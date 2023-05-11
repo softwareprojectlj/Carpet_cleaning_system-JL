@@ -98,32 +98,29 @@ public class INVOICECC {
                     break;
 }
                 }
-public Integer getprice(String w,String h)
-        {
-        this.width=w;
-        this.height=h;
-        Double area=(Double.valueOf(w) * Double.valueOf(h));
-        if(area<25 && area>0 )
-        price=200;
-        else  if(area<=5 && area>0 )
-        price=40;
+    public Integer getprice(String w,String h)
+    {
+        width=w;
+        height=h;
+        Double area=(Double.parseDouble(width) * Double.parseDouble(height));
+        if(area<=5 && area>0 )
+            price=40;
         else if(area<=15 && area>5 )
-        price=80;
+            price=80;
         else if(area<=25 && area>15 )
-        price=130;
+            price=130;
         else if(area<=45 && area>25 )
-        price=180;
+            price=180;
         else if(area<=65 && area>45 )
-        price=230;
+            price=230;
         else if(area<=85 && area>65 )
-        price=270;
+            price=270;
         else if(area<=110 && area>85 )
-        price=320;
+            price=320;
         else
-        price=450;
+            price=380;
         return price;
-        }
-public double applyDiscount(Integer pricedis) {
+    }public double applyDiscount(Integer pricedis) {
         this.price=pricedis;
         if (pricedis > 250) {
         double discount = pricedis * 0.1;
