@@ -131,7 +131,7 @@ public class Main {
                 product.deleteRecordproById(arrayListP, in);
                 product.getAllproduct();
             } else if (y == 4) {
-                product.Findproductbyname();
+                product.findproductbyname();
             } else if (y == 5) {
                 break;
             }}}
