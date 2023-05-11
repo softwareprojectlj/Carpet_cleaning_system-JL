@@ -28,6 +28,7 @@ public class Product {
     private  String prizstate;
     private  int custmorID;
 
+
     public Product(int id, String namep, String hP, String wP, String dP, int p, String s, int idcu, String pstate) {
         productID = id;
         productNAME = namep;
@@ -404,7 +405,8 @@ public class Product {
             }
             bufferedInputStream.close();
             fileInputStream.close();
-            logger.log(Level.INFO, String.valueOf(stringBuilder));
+            String  valueOF=String.valueOf(stringBuilder);
+            logger.log(Level.INFO, valueOF);
         }catch (IOException e) {
             logger.log(Level.INFO,String.valueOf(e));
         }
