@@ -2,5 +2,4 @@ id   , name , height , width , Delivery time , price , state , Cid , prizestate
 2432 , carpet2 , 8 , 5.8 , 24/4/2023 , 80 , complete , 7654 , yes
 3324 , cover1 , 9 , 3 , 3/5/2023 , 80 , in treatment , 2354 , yes
 2324 , carpet3 , 3 , 4 , 2/5/2023 , 80 , waiting , 2354 , no
-8424 , cover4 , 5 , 6.5 , 3/4/2023 , 80 , waiting , 2354 , yes
-4256 , carpit23 , 9 , 8 , 9/4/2022 , 243 , waiting , 4543 , no
+8424 , cover6 , 5 , 6.5 , 3/4/2023 , 80 , waiting , 2354 , yes

@@ -21,8 +21,8 @@ public class Main {
     static String entrymsg = "Enter your choice number : ";
     static int count;
     static Scanner in=new Scanner(System.in);
-    static String Username;
-    static String Password;
+    static String adminUsername;
+    static String adminPassword;
    static Customer customer = new Customer();
    static Product product = new Product();
 
@@ -33,11 +33,11 @@ public class Main {
         while (true){
         Scanner input1 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Username :   ");
-        Username = input1.next();
+        adminUsername = input1.next();
         Scanner input2 = new Scanner(System.in);
         LOGGER.log(Level.INFO,"Enter Password :   ");
-        Password = input2.next();
-        verify(Username,Password);
+        adminPassword = input2.next();
+        verify(adminUsername,adminPassword);
         }
 
     }
@@ -64,7 +64,7 @@ public class Main {
             Product p=new Product();
             ArrayList<String> worker=new ArrayList<>();
             p.listofworker();
-            p.Distribute(worker);
+            p.distribute(worker);
         }
         else if (s==4){
             compliteflag();
@@ -73,8 +73,8 @@ public class Main {
             Product.writef();
         }
         else if (s==6){
-            INVOICECC I=new INVOICECC();
-            I.readfromuser();
+            INVOICECC invoicecc=new INVOICECC();
+            invoicecc.readfromuser();
         }
         else if (s==7){
             System.exit(1);
@@ -108,7 +108,7 @@ public class Main {
                 break;
             }}}
 
-    public static void productmenu() throws IOException {
+    public static void productmenu() {
         while (true) {
             LOGGER.log(Level.INFO,"     <Product MENU>     ");
             LOGGER.log(Level.INFO,"[1] Add Product .");
@@ -131,14 +131,14 @@ public class Main {
                 product.deleteRecordproById(arrayListP, in);
                 product.getAllproduct();
             } else if (y == 4) {
-                product.Findproduct();
+                product.findproductbyname();
             } else if (y == 5) {
                 break;
             }}}
 
     public static void verify(String nameuser, String pass){
         String line;
-        String data[];
+        String [] data;
         String d=",";
         try {
 
@@ -171,9 +171,6 @@ public static   void test() {
     final String user = "";
     final String password = "";
     String to = Customer.eemailt;
-    ;
-    String to1 = "    ";
-
     Properties props = new Properties();
     props.put("mail.smtp.auth", "true");
     props.put("mail.smtp.port", "587");

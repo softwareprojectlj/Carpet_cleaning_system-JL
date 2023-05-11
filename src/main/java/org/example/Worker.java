@@ -1,17 +1,15 @@
 package org.example;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-import java.util.logging.Level;
+
+
 import java.util.logging.Logger;
 
 public class Worker {
 
     public static final  String WORKWRFILE = "Worker.txt";
-    Scanner input = new Scanner(System.in).useDelimiter("\n");
+
     private static Logger logger = Logger.getLogger("org.example.Worker");
    static int id;
      static String name;
@@ -64,32 +62,6 @@ public class Worker {
 
     public static String getUserData() {
         return id + " , " + name + " , " + phone + " , " + statues + " , " + productname;
-    }
-
-    public void readfromuser() {
-        logger.log(Level.INFO,"Add The worker:");
-        logger.log(Level.INFO,"Worker Id :  ");
-        int idW = Integer.parseInt(input.nextLine());
-        logger.log(Level.INFO,"the name of the worker:");
-        String nameW = input.nextLine();
-        logger.log(Level.INFO,"the Phone of the worker:");
-        String phoneW = input.nextLine();
-        logger.log(Level.INFO,"the Statues:");
-        String statuesW = input.nextLine();
-        String productNameW = "null";
-        writeWorker(idW, nameW, phoneW, statuesW, productNameW);
-    }
-
-    public void writeWorker(int id, String name, String phone, String statues, String productname) {
-        try {
-            FileWriter writer = new FileWriter(WORKWRFILE, true);
-            writer.append(Worker.getUserData());
-            writer.append("\n");
-            writer.close();
-            logger.log(Level.INFO,"Worker added successfully!");
-        } catch (IOException e) {
-           e.printStackTrace();
-        }
     }
 
 }
