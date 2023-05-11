@@ -399,20 +399,34 @@ public class Product {
         productWIDTH=w;
         productHEIGHT=h;
         Double area=(Double.valueOf(w) * Double.valueOf(h));
-        if(area<=5 && area>0 )
+        if(area<=5 && area>0 ){
             price=40;
-        else if(area<=15 && area>5 )
-            price=80;
-        else if(area<=25 && area>15 )
-            price=130;
-        else if(area<=45 && area>25 )
-            price=180;
-        else if(area<=65 && area>45 )
-            price=230;
-        else if(area<=85 && area>65 )
-            price=270;
-        else if(area<=110 && area>85 )
-            price=320;
+         if(area<=15 && area>5 )
+         {
+             price=80;
+             if(area<=15 && area>5 )
+             {
+                 price=80;
+                 if(area<=25 && area>15 )
+                 {
+                     price=130;
+                     if(area<=45 && area>25 )
+                     {
+                         price=180;
+                         if(area<=65 && area>45 )
+                         {
+                             price=230;
+                             if(area<=85 && area>65 )
+                             {
+                                 price=270;
+                                 if(area<=110 && area>85 ){
+                                     price=320;}}}}
+                 }
+             }
+
+         }
+
+        }
         else
             price=380;
         return price;
