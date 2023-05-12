@@ -13,7 +13,7 @@ public class Customer {
 
      private String customerId;
      private String customerName;
-     private String CustomerPhone;
+     private String customerPhone;
 
      public static String customerAddress;
      private String customerEmail;
@@ -23,12 +23,12 @@ public class Customer {
     public  Customer(String id,String name, String phone, String address,String email){
         customerId=id;
         customerName=name;
-        CustomerPhone=phone;
+        customerPhone=phone;
         customerAddress=address;
         customerEmail=email;
     }
     public  String getUserData(){
-        return  customerId+" , "+customerName+" , "+ CustomerPhone +" , " +customerAddress+" , "+customerEmail;
+        return  customerId+" , "+customerName+" , "+ customerPhone +" , " +customerAddress+" , "+customerEmail;
     }
 
     public void readfromuser(){
@@ -39,12 +39,12 @@ public class Customer {
         LOGGER.log(Level.INFO,"Enter Customer Name :  ");
         customerName=input.nextLine();
         LOGGER.log(Level.INFO,"Enter Customer Phone :  ");
-        CustomerPhone=input.next();
+        customerPhone=input.next();
         LOGGER.log(Level.INFO,"Enter Customer address :  ");
         customerAddress=input.next();
-     System.out.println("Enter Customer email :  ");
+        LOGGER.log(Level.INFO,"Enter Customer email :  ");
         customerEmail=input.next();
-        recordcustomer(customerId,customerName,CustomerPhone,customerAddress,customerEmail);
+        recordcustomer(customerId,customerName,customerPhone,customerAddress,customerEmail);
     }
 
     public Customer() {
@@ -97,7 +97,7 @@ public class Customer {
             }
             writer.close();
         }catch (Exception e){
-          System.out.println(e);
+            LOGGER.log(Level.INFO,String.valueOf(e));
         }
 
     }

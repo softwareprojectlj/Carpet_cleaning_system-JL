@@ -405,8 +405,8 @@ public class Product {
             }
             bufferedInputStream.close();
             fileInputStream.close();
-           // String  valueOF=String.valueOf(stringBuilder);
-            logger.log(Level.INFO, String.valueOf(stringBuilder));
+            String  valueOF=String.valueOf(stringBuilder);
+            logger.log(Level.INFO, valueOF);
         }catch (IOException e) {
             logger.log(Level.INFO,String.valueOf(e));
         }
