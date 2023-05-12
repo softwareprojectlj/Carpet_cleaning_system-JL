@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product jana4444second">
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update product janaif6767">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customerdata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordWorkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/UsersRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/UsersRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +117,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.RecordCustomer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Carpet_cleaning_system" />
@@ -125,50 +131,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: distributeorder" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: The List of workers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/distributeorder.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/recordWorker.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Carpet_cleaning_system" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: distributeorder" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: recordCustomer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/recordCustomer.feature" />
-      <option name="GLUE" value="software.test" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Carpet_cleaning_system" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: recordCustomer" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: recordWorker" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/recordWorker.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Carpet_cleaning_system" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: recordWorker" />
+      <option name="NAME_FILTER" value="^The List of workers$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The List of workers$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The List of workers" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -182,7 +152,7 @@
     </configuration>
     <configuration name="Scenario: product recorded successfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/recordProduct.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/recordProduct.feature" />
       <option name="GLUE" value="software.test" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Carpet_cleaning_system" />
@@ -200,13 +170,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecordCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Carpet_cleaning_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="software.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="software.test" />
+      <option name="MAIN_CLASS_NAME" value="software.test.RecordCustomer" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Carpet_cleaning_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="software.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="software.test" />
+      <option name="MAIN_CLASS_NAME" value="software.test.UsersRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecordCustomer" />
+        <item itemvalue="JUnit.UsersRunner" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Cucumber Java.Feature: recordWorker" />
-        <item itemvalue="Cucumber Java.Feature: recordCustomer" />
+        <item itemvalue="Cucumber Java.Scenario: The List of workers" />
         <item itemvalue="Cucumber Java.Scenario: product recorded successfully" />
-        <item itemvalue="Cucumber Java.Feature: distributeorder" />
       </list>
     </recent_temporary>
   </component>
@@ -218,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update customer 5">
-      <created>1683655400514</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1683655400514</updated>
     </task>
     <task id="LOCAL-00021" summary="update customer 6">
       <created>1683705701164</created>
@@ -562,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683749571286</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="update product janaif6767">
+      <created>1683787567880</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1683787567881</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update main lemara 1" />
     <MESSAGE value="update main lemara 2" />
     <MESSAGE value="update main lemara 3" />
     <MESSAGE value="update main lemara 4" />
@@ -614,7 +613,8 @@
     <MESSAGE value="update product removestatic" />
     <MESSAGE value="update product jana4444" />
     <MESSAGE value="update product jana4444second" />
-    <option name="LAST_COMMIT_MESSAGE" value="update product jana4444second" />
+    <MESSAGE value="update product janaif6767" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product janaif6767" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

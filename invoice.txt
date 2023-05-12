@@ -8,3 +8,9 @@ Type of product : 	9/2/2023
 day delivered :	380
  You have a discount equal 10% because your price > 250 ^-^ :342.0
 
+Product Name :	carpet2
+Price :	230
+Type of product : 	24/4/2023
+day delivered :	80
+-------------------------------------------------------------------------------
+
