@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 
 
-public class RecordCustomer {
+public class recordCustomer {
 
     Customer customer1=new Customer();
     private static final Logger LOGGER=Logger.getLogger("org.example.RecordCustomer");
