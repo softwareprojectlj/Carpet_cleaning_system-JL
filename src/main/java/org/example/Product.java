@@ -95,7 +95,7 @@ public class Product {
             while ((line = reader.readLine()) != null) {
                 String[] arr = line.split(" , ");
                 if (arr[0].contains(searchKey)) {
-
+                        line.trim();
                     logger.log(Level.INFO,line);
                 } else {
                     arrayList.add(line);
