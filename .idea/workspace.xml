@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update badsmells2 jana">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="update bugcreate jana" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -213,13 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675879271519</updated>
-    </task>
-    <task id="LOCAL-00024" summary="test update product jana 2">
-      <created>1683711378185</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1683711378185</updated>
     </task>
     <task id="LOCAL-00025" summary="update lemara 12 1">
       <created>1683714795792</created>
@@ -557,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683917664330</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="update bugcreate jana">
+      <created>1684013400043</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1684013400044</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update main lemara 5" />
     <MESSAGE value="update main lemara 6 test" />
     <MESSAGE value="update main lemara 7 test" />
     <MESSAGE value="update main lemara 8 test" />
@@ -609,7 +606,8 @@
     <MESSAGE value="badsmells jana" />
     <MESSAGE value="update badsmells jana" />
     <MESSAGE value="update badsmells2 jana" />
-    <option name="LAST_COMMIT_MESSAGE" value="update badsmells2 jana" />
+    <MESSAGE value="update bugcreate jana" />
+    <option name="LAST_COMMIT_MESSAGE" value="update bugcreate jana" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
