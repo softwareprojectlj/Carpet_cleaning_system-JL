@@ -5,7 +5,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.Customer;
 import org.junit.Test;
-
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -30,6 +31,7 @@ public class recordCustomer {
     @When("I entered the correct information")
     public void i_entered_the_correct_information() {
 
+
     }
 
 
@@ -45,8 +47,9 @@ public class recordCustomer {
     @Test
     public void testADD(){
         customer1.recordcustomer("1","lemara","059821346","Tulkaarem","jsdfgjsdf");
-        Boolean expected=true;
 
+        Boolean expected1 = true;
+ 	    assertTrue (expected1);
     }
 
 

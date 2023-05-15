@@ -98,7 +98,7 @@ public class INVOICECC {
                     break;
 }
                 }
-    public Integer getprice(String w,String h)
+    public  Integer getprice(String w,String h)
     {
         width=w;
         height=h;
