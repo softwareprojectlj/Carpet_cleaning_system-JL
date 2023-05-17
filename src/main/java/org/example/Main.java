@@ -74,7 +74,9 @@ public class Main {
         }
         else if (s==6){
             INVOICECC invoicecc=new INVOICECC();
-            invoicecc.readfromuser();
+            LOGGER.log(Level.INFO,"Enter Your Product Id:");
+            int idinvoice = Integer.parseInt(in.next());
+            invoicecc.printinvoice(idinvoice);
         }
         else if (s==7){
             System.exit(1);
@@ -120,18 +122,44 @@ public class Main {
             int y = in.nextInt();
             ArrayList<String> arrayListP = new ArrayList<String>();
             if (y == 1) {
-                product.readfromuserp();
+                LOGGER.log(Level.INFO, "Add your product:");
+                LOGGER.log(Level.INFO, "product Id :  ");
+                int idr = in.nextInt();
+                LOGGER.log(Level.INFO, "the name of the product:");
+                String namer = in.next();
+                LOGGER.log(Level.INFO, "the height of the product:");
+                String hR = in.next();
+                LOGGER.log(Level.INFO, "the width of the product:");
+                String wR = in.next();
+                LOGGER.log(Level.INFO, "the Delivery time:");
+                String dayr = in.next();
+                LOGGER.log(Level.INFO, "the id for customer:");
+                int idcust = in.nextInt();
+                LOGGER.log(Level.INFO, "Paid or not :");
+                String pstate = in.next();
+                String statep = "waiting";
+                product.readfromuserp(idr,namer,hR,wR,dayr,idcust,pstate,statep);
                 product.getAllproduct();
             } else if (y == 2) {
+                LOGGER.log(Level.INFO,"enter id:");
+                int janatest = in.nextInt();
+                LOGGER.log(Level.INFO, "Enter the data you want to update : ");
+                String olddata= String.valueOf(in.nextInt());
+                LOGGER.log(Level.INFO, "Enter the new data : ");
+                String newdata = String.valueOf(in.nextInt());
                 product.getAllproduct();
-                product.updateproduct(arrayListP);
+                product.updateproduct(arrayListP,janatest,olddata,newdata);
                 product.getAllproduct();
             } else if (y == 3) {
+                LOGGER.log(Level.INFO, "Enter An Id To Delete A Product : ");
+                String iddelete= in.next();
                 product.getAllproduct();
-                product.deleteRecordproById(arrayListP, in);
+                product.deleteRecordproById(arrayListP,iddelete);
                 product.getAllproduct();
             } else if (y == 4) {
-                product.findproductbyname();
+                LOGGER.log(Level.INFO, "Please Enter Name Of Product To Get Product Data  :");
+                String searchKey = in.next();
+                product.findproductbyname(searchKey);
             } else if (y == 5) {
                 break;
             }}}
@@ -141,7 +169,6 @@ public class Main {
         String [] data;
         String d=",";
         try {
-
             BufferedReader reader=new BufferedReader(new FileReader("Logindata.txt"));
             while ((line=reader.readLine())!=null){
                 data = line.split(d);

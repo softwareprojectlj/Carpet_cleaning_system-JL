@@ -12,60 +12,13 @@ import static org.example.Product.PRODUCTFILE;
 
 public class INVOICECC {
     Integer price;
-    private String nameCO;
-    private String nameCA;
-    private String addressinvoice;
-    private String priceinvoice;
-    private String dateinvoive;
     public static final String INVOICEFILE = "invoice.txt";
-    Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static Logger logger = Logger.getLogger("org.example.INVOICECC");
     private String width;
     private String height;
     public INVOICECC() {
     }
-    public String getCOname() {
-        return nameCO;
-    }
-    public void setCOname(String coname) {
-        nameCO = coname;
-    }
-    public String getCAname() {
-        return nameCA;
-    }
-    public void setCAname(String caname) {
-        nameCA = caname;
-    }
-    public String getAddressinvoice() {
-        return addressinvoice;
-    }
-    public void setAddressinvoice(String addressi) {
-        this.addressinvoice = addressi;
-    }
-    public String getPriceinvoice() {
-        return priceinvoice;
-    }
-    public void setPriceinvoice(String pricei) {
-        this.priceinvoice = pricei;
-    }
-    public String getdateinvoice() {
-        return dateinvoive;
-    }
-    public void setDateinvoice(String datei) {
-        this.dateinvoive = datei;
-    }
-    public INVOICECC(String nameCOO, String nameCAA, String addressi, String pricei, String datei) {
-        nameCO = nameCOO;
-        nameCA = nameCAA;
-       addressinvoice = addressi;
-       priceinvoice = pricei;
-        dateinvoive = datei;
-    }
-    public void readfromuser() throws IOException {
-        logger.log(Level.INFO,"Enter Your Product Id:");
-        int idinvoice = Integer.parseInt(input.nextLine());
-        printinvoice(idinvoice);
-    }
+
   public void printinvoice(int id) throws IOException {
       String []data=null;
       while(true) {
@@ -120,12 +73,14 @@ public class INVOICECC {
         else
             price=380;
         return price;
-    }public double applyDiscount(Integer pricedis) {
+    }
+    public double applyDiscount(Integer pricedis) {
         this.price=pricedis;
         if (pricedis > 250) {
         double discount = pricedis * 0.1;
         return pricedis - discount;
-        } else {
+        }
+        else {
         return pricedis;
         }
         }

@@ -5,21 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ef815b8-e877-45f8-abee-b48dd528ec33" name="Changes" comment="delete bug janaproduct">
-      <change afterPath="$PROJECT_DIR$/features/printinvoice.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/testmain.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/distributeorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/printinvoivejj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/software/test/testMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/maintest.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customerdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customerdata.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/Distributeorder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/Distributeorder.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/Trackorder.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/INVOICECC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/INVOICECC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/Tester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/UsersRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/UsersRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/recordCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/recordCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/RecordWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/RecordWorkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/distributeorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/distributeorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/printinvoivejj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/printinvoiveJJ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/software/test/testMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/software/test/testMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,36 +125,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.printinvoivejj">
-    <configuration name="Feature: distributeorder" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/features/distributeorder.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+  <component name="RunManager" selected="JUnit.UsersRunner">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Carpet_cleaning_system" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: distributeorder" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: printinvoice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/features/printinvoice.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Carpet_cleaning_system" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: printinvoice" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,6 +155,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="printinvoiveJJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Carpet_cleaning_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="software.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="software.test" />
+      <option name="MAIN_CLASS_NAME" value="software.test.printinvoiveJJ" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="printinvoiveJJ.testADD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Carpet_cleaning_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="software.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="software.test" />
+      <option name="MAIN_CLASS_NAME" value="software.test.printinvoiveJJ" />
+      <option name="METHOD_NAME" value="testADD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="printinvoivejj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Carpet_cleaning_system" />
       <extension name="coverage">
@@ -194,36 +201,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="printinvoivejj.testADD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Carpet_cleaning_system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="software.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="software.test" />
-      <option name="MAIN_CLASS_NAME" value="software.test.printinvoivejj" />
-      <option name="METHOD_NAME" value="testADD" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: distributeorder" />
-      <item itemvalue="Cucumber Java.Feature: printinvoice" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.printinvoiveJJ" />
+      <item itemvalue="JUnit.printinvoiveJJ.testADD" />
       <item itemvalue="JUnit.printinvoivejj" />
-      <item itemvalue="JUnit.printinvoivejj.testADD" />
       <item itemvalue="JUnit.UsersRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.printinvoivejj" />
         <item itemvalue="JUnit.UsersRunner" />
-        <item itemvalue="JUnit.printinvoivejj.testADD" />
-        <item itemvalue="Cucumber Java.Feature: printinvoice" />
-        <item itemvalue="Cucumber Java.Feature: distributeorder" />
+        <item itemvalue="JUnit.printinvoiveJJ" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.printinvoiveJJ.testADD" />
+        <item itemvalue="JUnit.printinvoivejj" />
       </list>
     </recent_temporary>
   </component>
@@ -653,11 +644,17 @@
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$Feature__recordProduct.ic" NAME="Feature: recordProduct Coverage Results" MODIFIED="1684081966392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$UsersRunner.exec" NAME="UsersRunner Coverage Results" MODIFIED="1684090858617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$UsersRunner.exec" NAME="UsersRunner Coverage Results" MODIFIED="1684320866371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$printinvoivejj.ic" NAME="printinvoivejj Coverage Results" MODIFIED="1684089981735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$printinvoiveJJ.ic" NAME="printinvoiveJJ Coverage Results" MODIFIED="1684300009579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>software.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$printinvoivejj.ic" NAME="printinvoivejj Coverage Results" MODIFIED="1684233497166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>software.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Carpet_cleaning_system_JL$Feature__maintest.ic" NAME="Feature: maintest Coverage Results" MODIFIED="1684299241879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Carpet_cleaning_system$Feature__recordWorker.ic" NAME="Feature: recordWorker Coverage Results" MODIFIED="1682589417688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
