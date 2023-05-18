@@ -1,20 +1,16 @@
 package software.test;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.example.Product;
-import org.example.Main;
-
 import java.util.ArrayList;
 
-import static org.example.Main.productmenu;
 
 public class testMain {
     Product pmaiN=new Product();
     ArrayList<String> arraymain = new ArrayList<String>();
     @Given("show product menu")
     public void show_product_menu() {
-       // productmenu();
+       pmaiN.getAllproduct();
     }
     @Then("enter update")
     public void enter_update() {
@@ -24,7 +20,7 @@ public class testMain {
     }
     @Then("enter add")
     public void enter_add() {
-pmaiN.readfromuserp(1234,"lemaratest","7.8","2","30/5/2023",7654,"90","Yes");
+pmaiN.readfromuserp(1234,"lemaratest","7.8","2","30/5/2023",7654,"Yes");
     }
     @Then("enter delete")
     public void enter_delete() {

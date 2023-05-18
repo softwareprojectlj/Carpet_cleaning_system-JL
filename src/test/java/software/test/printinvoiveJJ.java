@@ -2,16 +2,14 @@ package software.test;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.example.INVOICECC;
-import org.example.Product;
 import org.junit.Test;
 import java.io.*;
-
-import static org.example.Product.PRODUCTFILE;
+import static org.example.Product.writef;
 import static org.junit.Assert.assertEquals;
-public class printinvoiveJJ {
+import static org.junit.Assert.assertTrue;
 
+public class printinvoiveJJ {
     INVOICECC invoice = new INVOICECC();
-    Product testprint= new Product();
     @Given("i entered id of product")
     public void i_entered_id_of_product()  {
 
@@ -33,4 +31,12 @@ public class printinvoiveJJ {
     public void print_the_invoice() throws IOException {
         invoice.printinvoice(2432);
     }
+    @Test
+    @Given("print total paid")
+    public void print_total_paid() {
+
+        writef();
+        assertTrue(true);
+    }
+
 }

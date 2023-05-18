@@ -15,41 +15,10 @@ day delivered :	80
 -------------------------------------------------------------------------------
 
 Product Name :	carpet2
-Price :	230
-Type of product : 	24/4/2023
-day delivered :	80
--------------------------------------------------------------------------------
-
-Product Name :	carpet2
-Price :	230
-Type of product : 	24/4/2023
-day delivered :	80
--------------------------------------------------------------------------------
-
-Product Name :	carpet2
-Price :	230
-Type of product : 	24/4/2023
-day delivered :	80
--------------------------------------------------------------------------------
-
-Product Name :	carpet2
 Price :	180
 Type of product : 	24/4/2023
 day delivered :	60
 -------------------------------------------------------------------------------
-
-Product Name :	carpet2
-Price :	180
-Type of product : 	24/4/2023
-day delivered :	60
--------------------------------------------------------------------------------
-
-Product Name :	carpet2
-Price :	180
-Type of product : 	24/4/2023
-day delivered :	60
--------------------------------------------------------------------------------
-
 Product Name :	carpet2
 Price :	180
 Type of product : 	24/4/2023

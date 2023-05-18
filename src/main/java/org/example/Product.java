@@ -7,12 +7,11 @@ import static org.example.Main.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static org.example.Worker.WORKWRFILE;
 
 public class Product {
     int price;
+    public static final  String WORKWRFILE = "Worker.txt";
     public static final String PRODUCTFILE = "product.txt";
-    static Scanner input = new Scanner(System.in).useDelimiter("\n");
     private static final Logger logger = Logger.getLogger("org.example.Product");
     private int productID;
 
@@ -27,7 +26,6 @@ public class Product {
     private static int priceno;
     private String prizstate;
     private int custmorID;
-
 
     public Product(int id, String namep, String hP, String wP, String dP, int p, String s, int idcu, String pstate) {
         productID = id;
@@ -45,24 +43,8 @@ public class Product {
         return productID + " , " + productNAME + " , " + productHEIGHT + " , " + productWIDTH + " , " + prodcutDFINISH + " , " + productPRICE + " , " + productSTATE + " , " + custmorID + " , " + prizstate;
     }
 
-    public void readfromuserp(int idr,String namer,String hR,String wR,String dayr,int idcust,String pstate,String statep) {
-       /* logger.log(Level.INFO, "Add your product:");
-        logger.log(Level.INFO, "product Id :  ");
-        int idr = Integer.parseInt(input.nextLine());
-        logger.log(Level.INFO, "the name of the product:");
-        String namer = input.nextLine();
-        logger.log(Level.INFO, "the height of the product:");
-        String hR = input.nextLine();
-        logger.log(Level.INFO, "the width of the product:");
-        String wR = input.nextLine();
-        logger.log(Level.INFO, "the Delivery time:");
-        String dayr = input.nextLine();
-        logger.log(Level.INFO, "the id for customer:");
-        int idcust = Integer.parseInt(input.nextLine());
-        logger.log(Level.INFO, "Paid or not :");
-        String pstate = input.nextLine();
-        String statep = "waiting";*/
-
+    public void readfromuserp(int idr,String namer,String hR,String wR,String dayr, int idcust,String pstate) {
+        String statep = "waiting";
         int pp = getprice(wR, hR);
         int priced = applyDiscount(pp);
         writeproduct(idr, namer, hR, wR, dayr, priced, statep, idcust, pstate);
@@ -247,11 +229,9 @@ public class Product {
         }
     }
 
-    public void distribute(List<String> workerarray) throws IOException {
+    public void distribute(List<String> workerarray, int idproduct,int idworker) throws IOException {
         String[] distributeP;
         String[] distributeW;
-        logger.log(Level.INFO, "\tenter the ID of the product:\t ");
-        int idproduct = Integer.parseInt(input.nextLine());
         String information;
         StringBuilder sb = new StringBuilder();
         BufferedReader reader = new BufferedReader(new FileReader(WORKWRFILE));
@@ -260,11 +240,8 @@ public class Product {
         Scanner sci = new Scanner(fin);
         while (sci.hasNextLine()) {
             String line = sci.nextLine();
-
             distributeP = line.split(" , ");
             if (distributeP[0].equalsIgnoreCase(String.valueOf(idproduct))) {
-                logger.log(Level.INFO, "\tenter the ID of the Worker:\t ");
-                int idworker = Integer.parseInt(input.nextLine());
                 while ((line2 = reader.readLine()) != null) {
                     sb.append(line2).append("\n");
 
@@ -403,7 +380,6 @@ public class Product {
 
     public Boolean check(Integer idupdd) {
         Boolean checkp = true;
-        ArrayList<String> productpp = new ArrayList<>();
         try {
             FileReader fr = new FileReader(PRODUCTFILE);
             BufferedReader br = new BufferedReader(fr);
@@ -413,7 +389,7 @@ public class Product {
 
                 updatestate = line.split(" , ");
                 if (updatestate[0].equalsIgnoreCase(String.valueOf(idupdd))) {
-                    if (updatestate[6] == "in treatment")
+                    if (updatestate[6].equals("in treatment"))
                         checkp= true;
                 }
             }

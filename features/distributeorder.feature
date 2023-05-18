@@ -9,4 +9,8 @@ Feature: distributeorder
     Then  distribute successful
     Then  put worker not available
 
+  Scenario: complete order
+    Given order complete
+    Then  send email
+
 

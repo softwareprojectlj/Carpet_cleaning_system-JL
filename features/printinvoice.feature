@@ -4,4 +4,6 @@ Feature: print invoice
     Then  Calculate the price
     Then  print the invoice
 
+  Scenario: Total paid successful
+    Given print total paid
 

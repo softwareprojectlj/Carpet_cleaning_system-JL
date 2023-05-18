@@ -1,5 +1,4 @@
 package org.example;
-
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -10,8 +9,9 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-
 import static org.example.Product.compliteflag;
+
+
 public class Main {
     private static final Logger LOGGER=Logger.getLogger("org.example.Main");
     public static final String RESET = "\u001B[0m";
@@ -25,7 +25,6 @@ public class Main {
     static String adminPassword;
    static Customer customer = new Customer();
    static Product product = new Product();
-
 
     public static void main(String[] args) {readlogindata();}
 
@@ -64,10 +63,14 @@ public class Main {
             Product p=new Product();
             ArrayList<String> worker=new ArrayList<>();
             p.listofworker();
-            p.distribute(worker);
+            LOGGER.log(Level.INFO, "\tenter the ID of the product:\t ");
+            int idproduct = Integer.parseInt(in.nextLine());
+            LOGGER.log(Level.INFO, "\tenter the ID of the Worker:\t ");
+            int idworker = Integer.parseInt(in.nextLine());
+            p.distribute(worker,idproduct,idworker);
         }
         else if (s==4){
-            compliteflag();
+          compliteflag();
         }
         else if (s==5){
             Product.writef();
@@ -137,8 +140,7 @@ public class Main {
                 int idcust = in.nextInt();
                 LOGGER.log(Level.INFO, "Paid or not :");
                 String pstate = in.next();
-                String statep = "waiting";
-                product.readfromuserp(idr,namer,hR,wR,dayr,idcust,pstate,statep);
+                product.readfromuserp(idr,namer,hR,wR,dayr,idcust,pstate);
                 product.getAllproduct();
             } else if (y == 2) {
                 LOGGER.log(Level.INFO,"enter id:");

@@ -16,9 +16,6 @@ public class INVOICECC {
     private static Logger logger = Logger.getLogger("org.example.INVOICECC");
     private String width;
     private String height;
-    public INVOICECC() {
-    }
-
   public void printinvoice(int id) throws IOException {
       String []data=null;
       while(true) {
